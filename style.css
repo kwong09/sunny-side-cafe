@@ -2,6 +2,37 @@ div {
     background-size: cover;
 }
 
+.background {
+    height: 600px;
+    width: 900px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: black;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0%{filter: brightness(100%); opacity: 1;}
+    100%{filter: brightness(0%); opacity: 0;}
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0%{filter: brightness(0%); opacity: 0;}
+    100%{filter: brightness(100%); opacity: 1;}
+}
+
 .screen {
     height: 600px;
     width: 900px;
@@ -65,6 +96,12 @@ div {
     100%{top: 150px;}
 }
 
+
+@keyframes customerDown {
+    0%{top: 150px;}
+    100%{top: 500px;}
+}
+
 .topSign {
     height: auto;
     width: max-content;
@@ -81,8 +118,38 @@ div {
 }
 
 @keyframes signDown {
-    0%{top: -50px;}
+    0%{top: -100px;}
     100%{top: 0px;}
+}
+
+@keyframes signUp {
+    0%{top: 0px;}
+    100%{top: -100px;}
+}
+
+.nextButton {
+    height: 100px;
+    width: 150px;
+    background-color: lightgrey;
+    position: fixed;
+    right: -100%;
+    top: 450px;
+    cursor: pointer;
+
+    animation-delay: 4s;
+    animation: nextButtonRightAppear 2s ease-in-out forwards;
+
+}
+
+@keyframes nextButtonRightAppear {
+    0%{right: -100%;}
+    100%{right: 0%;}
+}
+
+
+@keyframes nextButtonRightDisappear {
+    0%{right: 0%;}
+    100%{right: -100%;}
 }
 
 .customerSpeechBubble {
@@ -112,6 +179,12 @@ div {
     100%{width: 300px;}
 }
 
+
+@keyframes speechBubbleDown {
+    0%{top: 25%; width: 300px;}
+    100%{top: 100%; width: 300px;}
+}
+
 .customerSpeechBubble span {
     font-size: 20px;
     width: 0ch;
@@ -134,4 +207,35 @@ div {
     position: fixed;
     top: 10px;
     right: 20px;
+}
+
+
+.mainDishScreen {
+    background-color: lightyellow;
+    opacity: 0;
+    filter: brightness(0%);
+
+    display: none;
+}
+
+.plate {
+    height: 180px;
+    width: 250px;
+    background-color: green;
+
+    position: fixed;
+    left: -125px;
+    bottom: 0px;
+
+    animation: plateIn 1s ease-in-out forwards;
+}
+
+@keyframes plateIn {
+    0%{left: -125px;}
+    100%{left: 325px;}
+}
+
+@keyframes plateOut {
+    0%{left: 325px;}
+    100%{left: 900px;}
 }
