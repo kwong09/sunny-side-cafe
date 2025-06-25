@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunny Side Cafe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="screen homeScreen">
+      <div id="startButton" onclick="invisible(homeScreen); visible(orderScreen)">Start</div>
+    </div>
+
+    <div class="screen orderScreen">
+      <div class="topSign">ORDER HERE</div>
+
+      <div class="customer"></div>
+      <div class="counter"></div>
+      <div class="money">$<span id="moneyCount">100</span></div>
+      <div class="customerSpeechBubble"><span>Good morning! Could I please get a <br>simple pancake with butter on top? <br>Along with a nice, hot cup of coffee<br> (with no toppings). Thank you!</span></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

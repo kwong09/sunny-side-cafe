@@ -1,0 +1,137 @@
+div {
+    background-size: cover;
+}
+
+.screen {
+    height: 600px;
+    width: 900px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.homeScreen {
+    background-color: lightblue;
+}
+
+
+#startButton {
+    height: 80px;
+    width: 170px;
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
+    background-color: white;
+}
+
+
+.orderScreen {
+    background-color: lightpink;
+    display: none;
+}
+
+.counter {
+    height: 200px;
+    width: 900px;
+
+    position: fixed;
+    top: 400px;
+    background-color: lightslategray;
+}
+
+.customer {
+    height: 250px;
+    width: 200px;
+
+    position: fixed;
+    top: 500px;
+    left: 150px;
+    background-color: lightcoral;
+
+    animation: customerUp 1s ease-in-out forwards;
+}
+
+@keyframes customerUp {
+    0%{top: 500px;}
+    100%{top: 150px;}
+}
+
+.topSign {
+    height: auto;
+    width: max-content;
+    font-size: 30px;
+    padding: 20px;
+
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: lightcyan;
+
+    animation: signDown 1s ease-in-out forwards;
+}
+
+@keyframes signDown {
+    0%{top: -50px;}
+    100%{top: 0px;}
+}
+
+.customerSpeechBubble {
+    height: auto;
+    width: 0px;
+    padding: 20px;
+    border-radius: 20px;
+
+    position: fixed;
+    top: 25%;
+    left: 65%;
+    transform: translateX(-50%);
+
+    background-color: lightcyan;
+
+    animation: expandRight 1s ease-in-out forwards, floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%{top: 25%;}
+    50%{top: 27%;}
+    100%{top: 25%;}
+}
+
+@keyframes expandRight {
+    0%{width: 0px;}
+    100%{width: 300px;}
+}
+
+.customerSpeechBubble span {
+    font-size: 20px;
+    width: 0ch;
+    opacity: 0;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+
+    animation: textTyping 1s steps(100) forwards;
+    animation-delay: 1s;
+}
+
+@keyframes textTyping {
+    from{width: 0ch; opacity: 1;}
+    to{width: 100ch; opacity: 1;}
+}
+
+.money {
+    font-size: 30px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
