@@ -239,3 +239,134 @@ div {
     0%{left: 325px;}
     100%{left: 900px;}
 }
+
+.selection {
+    height: 150px;
+    width: 150px;
+    top: 150px;
+
+    position: fixed;
+    cursor: pointer;
+}
+
+.selection:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.pancakeButton {
+    background-color: lightblue;
+    left: 150px;
+}
+
+.toastButton {
+    background-color: lightseagreen;
+    left: 375px;
+}
+
+.eggsButton {
+    background-color: lightsteelblue;
+    left: 600px;
+}
+
+.minigame {
+    height: 500px;
+    width: 800px;
+    background-color: lightgray;
+
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+}
+
+.closeButton {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+
+    position: fixed;
+    cursor: pointer;
+    left: 800px;
+}
+
+.gameScreen {
+    height: 400px;
+    width: 750px;
+
+    position: fixed;
+    left: 75px;
+    top: 130px;
+    background-color: white;
+
+    overflow: hidden;
+}
+
+#pancakePan {
+    height: 150px;
+    width: 350px;
+
+    position: fixed;
+    left: 275px;
+    bottom: 150px;
+
+    background-color: blue;
+
+    cursor: pointer;
+}
+
+#sliderBar {
+    height: 20px;
+    width: 500px;
+
+    background: linear-gradient(0.25turn, lightcoral, lightgreen, lightcoral);
+    position: fixed;
+    top: 170px;
+    left: 200px;
+
+    border-radius: 10px;
+}
+
+#sliderCircle {
+    height: 50px;
+    width: 50px;
+
+    background-color: pink;
+    position: fixed;
+    top: 155px;
+    left: 180px;
+
+    border-radius: 100%;
+
+    animation: sliderAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes sliderAnimation {
+    0%{left: 180px;}
+    50%{left: 680px;}
+    100%{left: 180px;}
+}
+
+#pancakeGameTextDiv {
+    position: fixed;
+    text-align: center;
+    background-color: pink;
+    font-size: 20px;
+    
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+}
+
+.nextGameButton {
+    display: none;
+    height: 60px;
+    width: 100px;
+    background-color: pink;
+
+    position: fixed;
+    top: 345px;
+    left: 710px;
+
+    cursor: pointer;
+}

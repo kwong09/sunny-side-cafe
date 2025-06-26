@@ -10,7 +10,23 @@ let moneyCount = document.getElementById("moneyCount");
 let nextButton = document.querySelector(".nextButton");
 let customerSpeechBubble = document.querySelector(".customerSpeechBubble");
 
-let mainDishScreen = document.querySelector(".mainDishScreen")
+let mainDishScreen = document.querySelector(".mainDishScreen");
+let food = document.querySelector(".food");
+let mainDish = document.querySelector(".mainDish");
+let plate = document.querySelector(".plate");
+let pancakeSelection = document.querySelector(".pancakeSelection");
+let toastSelection = document.querySelector(".toastSelection");
+let eggsSelection = document.querySelector(".eggsSelection");
+
+let minigame = document.querySelector(".minigame");
+let pancakeGame = document.querySelector(".pancakeGame");
+let closeButton = document.querySelector(".closeButton");
+let gameScreen = document.querySelector(".gameScreen");
+let pancakePan = document.getElementById("pancakePan");
+let sliderBar = document.getElementById("sliderBar");
+let sliderCircle = document.getElementById("sliderCircle");
+let pancakeGameText = document.getElementById("pancakeGameText");
+let nextGameButton = document.querySelector(".nextGameButton");
 
 function visible(obj) {
     obj.style.display = "block";
@@ -33,6 +49,29 @@ function visible(obj) {
                 mainDishScreen.classList.add("fadeIn");
             }, 2000);
         })
+    }
+
+
+    if (mainDishScreen.style.display === "block") {
+
+        pancakePan.addEventListener("click", function() {
+            sliderCircle.style.animationPlayState = "paused";
+
+            requestAnimationFrame(() =>{
+            let sliderLeft = parseInt(getComputedStyle(sliderCircle).left);
+            visible(nextGameButton)
+
+            if (sliderLeft <= 480 && sliderLeft >= 380) {
+                pancakeGameText.innerHTML = "Perfect! You must be an awesome chef!";
+            } else if (sliderLeft >= 480 && sliderLeft < 580) {
+                pancakeGameText.innerHTML = "Good effort! You can do better next time!";
+            } else if (sliderLeft > 280 && sliderLeft <= 380) {
+                pancakeGameText.innerHTML = "Good effort! You can do better next time!";
+            } else {
+                pancakeGameText.innerHTML = "That was terrible... Try to improve for the next time!";
+            }
+            });
+        });
     }
 }
 
