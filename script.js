@@ -62,6 +62,11 @@ let eggsChocolate = document.querySelector(".eggsChocolate");
 let eggsPBJ = document.querySelector(".eggsPBJ");
 let eggsPlain = document.querySelector(".eggsPlain");
 
+let toaster = document.querySelector(".toaster");
+let timerCircle = document.querySelector(".timerCircle");
+let timerLine = document.querySelector(".timerLine");
+let toastGameText = document.getElementById("toastGameText");
+
 let score = 0;
 let customerNumber = 1;
 let selectedDish = "none";
@@ -159,3 +164,42 @@ pancakeButter.addEventListener("click", function() {
 
 
 
+
+
+
+
+
+timerCircle.addEventListener("click", function() {
+    timerLine.style.animationPlayState = "paused";
+    visible(toastNextGameButton);
+
+    requestAnimationFrame(() => {
+        let timerLineMatrix = getComputedStyle(timerLine).transform;
+        let matrixList = timerLineMatrix.replace('matrix(', '').replace(')', '').split(',');
+        let value1 = parseFloat(matrixList[0]);
+        let value2 = parseFloat(matrixList[1]);
+        let timerLineRadians = Math.atan2(value2, value1);
+        //radians to degrees conversion!
+        let timerLineDegrees = timerLineRadians * (180/Math.PI);
+
+        if (timerLineDegrees >= 70 && timerLineDegrees <= 110) {
+            toastGameText.innerHTML = "Awesome job!";
+            if (round === 2) {
+                score++;
+            }
+        } else if ((timerLineDegrees < 70 && timerLineDegrees >= 20) || (timerLineDegrees > 110 && timerLineDegrees <= 160)) {
+            toastGameText.innerHTML = "Good effort!";
+            if (round === 2) {
+                score = score + 0.5;
+            }
+        } else {
+            toastGameText.innerHTML = "That was not good...";
+        }
+
+    })
+})
+
+toastNextGameButton.addEventListener("click", function() {
+    toastGameScreen.style.animation = "gameScreenExit 1s ease-in-out forwards";
+    toastCustomizationScreen.style.animation = "customizationScreenEnter 1s ease-in-out forwards";
+});
