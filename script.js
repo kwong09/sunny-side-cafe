@@ -14,19 +14,30 @@ let mainDishScreen = document.querySelector(".mainDishScreen");
 let food = document.querySelector(".food");
 let mainDish = document.querySelector(".mainDish");
 let plate = document.querySelector(".plate");
-let pancakeSelection = document.querySelector(".pancakeSelection");
-let toastSelection = document.querySelector(".toastSelection");
-let eggsSelection = document.querySelector(".eggsSelection");
+let pancakeButton = document.querySelector(".pancakeButton");
+let toastButton = document.querySelector(".toastButton");
+let eggsButton = document.querySelector(".eggsButton");
 
 let minigame = document.querySelector(".minigame");
 let pancakeGame = document.querySelector(".pancakeGame");
 let closeButton = document.querySelector(".closeButton");
 let gameScreen = document.querySelector(".gameScreen");
+let pancakeGameScreen = document.querySelector(".pancakeGameScreen");
 let pancakePan = document.getElementById("pancakePan");
 let sliderBar = document.getElementById("sliderBar");
 let sliderCircle = document.getElementById("sliderCircle");
 let pancakeGameText = document.getElementById("pancakeGameText");
 let nextGameButton = document.querySelector(".nextGameButton");
+let pancakeNextGameButton = document.querySelector(".pancakeNextGameButton");
+let customizationScreen = document.querySelector(".customizationScreen");
+let pancakeCustomizationScreen = document.querySelector(".pancakeCustomizationScreen");
+let customizationBase = document.querySelector(".customizationBase");
+let customizationOptions = document.querySelector(".customizationOptions");
+let pancakeBase = document.querySelector(".pancakeBase");
+let pancakeButter = document.querySelector(".pancakeButter");
+let pancakeFruits = document.querySelector(".pancakeFruits");
+let pancakeWhippedCream = document.querySelector(".pancakeWhippedCream");
+let pancakePlain = document.querySelector(".pancakePlain");
 
 function visible(obj) {
     obj.style.display = "block";
@@ -54,24 +65,45 @@ function visible(obj) {
 
     if (mainDishScreen.style.display === "block") {
 
+        pancakeButton.addEventListener("click", function() {
+            minigame.style.animation = "minigameUp 1s ease-in-out forwards";
+        });
+
+        closeButton.addEventListener("click", function() {
+            minigame.style.animation = "minigameDown 1s ease-in-out forwards";
+        });
+
         pancakePan.addEventListener("click", function() {
             sliderCircle.style.animationPlayState = "paused";
 
             requestAnimationFrame(() =>{
             let sliderLeft = parseInt(getComputedStyle(sliderCircle).left);
-            visible(nextGameButton)
+            visible(nextGameButton);
 
-            if (sliderLeft <= 480 && sliderLeft >= 380) {
+            if (sliderLeft <= 404 && sliderLeft >= 306) {
                 pancakeGameText.innerHTML = "Perfect! You must be an awesome chef!";
-            } else if (sliderLeft >= 480 && sliderLeft < 580) {
+            } else if (sliderLeft >= 208 && sliderLeft < 306) {
                 pancakeGameText.innerHTML = "Good effort! You can do better next time!";
-            } else if (sliderLeft > 280 && sliderLeft <= 380) {
+            } else if (sliderLeft > 404 && sliderLeft <= 502) {
                 pancakeGameText.innerHTML = "Good effort! You can do better next time!";
             } else {
-                pancakeGameText.innerHTML = "That was terrible... Try to improve for the next time!";
+                pancakeGameText.innerHTML = "That was bad... Try to improve!";
             }
             });
         });
+
+        pancakeNextGameButton.addEventListener("click", function() {
+            pancakeGameScreen.style.animation = "gameScreenExit 1s ease-in-out forwards";
+            pancakeCustomizationScreen.style.animation = "customizationScreenEnter 1s ease-in-out forwards";
+        });
+
+        //pancake customization options
+
+        pancakeButter.addEventListener("click", function() {
+            pancakeBase.style.backgroundColor = "green";
+        });
+
+        
     }
 }
 

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sunny Side Cafe</title>
   <link rel="stylesheet" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -38,12 +42,22 @@
 
       <div class="minigame pancakeGame">
         <div class="closeButton"></div>
-        <div class="gameScreen">
+        <div class="gameScreen pancakeGameScreen">
           <div id="pancakePan"></div>
           <div id="sliderBar"></div>
           <div id="sliderCircle"></div>
-          <div id="pancakeGameTextDiv"><span id="pancakeGameText">Click the pan to stop cooking at the perfect time!</span></div>
-          <div class="nextGameButton"></div>
+          <div id="pancakeGameTextDiv"><span id="pancakeGameText">Click the pan to stop at the right time!</span></div>
+          <div class="nextGameButton pancakeNextGameButton"></div>
+        </div>
+        
+        <div class="customizationScreen pancakeCustomizationScreen">
+          <div class="customizationBase pancakeBase"></div>
+          <div class="customizationOptions">
+            <div class="pancakeButter"></div>
+            <div class="pancakeFruits"></div>
+            <div class="pancakeWhippedCream"></div>
+            <div class="pancakePlain"></div>
+          </div>
         </div>
       </div>
     </div>

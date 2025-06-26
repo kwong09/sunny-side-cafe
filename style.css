@@ -1,5 +1,6 @@
 div {
     background-size: cover;
+    font-family: "Gochi Hand";
 }
 
 .background {
@@ -273,11 +274,24 @@ div {
     height: 500px;
     width: 800px;
     background-color: lightgray;
+    overflow: hidden;
 
     position: fixed;
     left: 50px;
-    top: 50px;
+    top: 600px;
     z-index: 10;
+
+    animation: none;
+}
+
+@keyframes minigameUp {
+    0%{top: 600px;}
+    100%{top: 50px;}
+}
+
+@keyframes minigameDown {
+    0%{top: 50px;}
+    100%{top: 600px;}
 }
 
 .closeButton {
@@ -285,30 +299,53 @@ div {
     width: 50px;
     background-color: red;
 
-    position: fixed;
+    position: absolute;
     cursor: pointer;
-    left: 800px;
+    left: 750px;
 }
 
 .gameScreen {
     height: 400px;
     width: 750px;
 
-    position: fixed;
-    left: 75px;
-    top: 130px;
+    position: absolute;
+    left: 25px;
+    top: 80px;
     background-color: white;
 
     overflow: hidden;
+}
+
+@keyframes gameScreenExit {
+    0%{left: 25px;}
+    100%{left: -800px;}
+}
+
+.customizationScreen {
+    height: 400px;
+    width: 750px;
+
+    position: absolute;
+    left: 800px;
+    top: 80px;
+    background-color: white;
+
+    overflow: hidden;
+}
+
+
+@keyframes customizationScreenEnter {
+    0%{left: 800px;}
+    100%{left: 25px;}
 }
 
 #pancakePan {
     height: 150px;
     width: 350px;
 
-    position: fixed;
-    left: 275px;
-    bottom: 150px;
+    position: absolute;
+    left: 200px;
+    bottom: 80px;
 
     background-color: blue;
 
@@ -320,9 +357,9 @@ div {
     width: 500px;
 
     background: linear-gradient(0.25turn, lightcoral, lightgreen, lightcoral);
-    position: fixed;
-    top: 170px;
-    left: 200px;
+    position: absolute;
+    top: 42px;
+    left: 125px;
 
     border-radius: 10px;
 }
@@ -332,9 +369,9 @@ div {
     width: 50px;
 
     background-color: pink;
-    position: fixed;
-    top: 155px;
-    left: 180px;
+    position: absolute;
+    top: 25px;
+    left: 110px;
 
     border-radius: 100%;
 
@@ -342,19 +379,18 @@ div {
 }
 
 @keyframes sliderAnimation {
-    0%{left: 180px;}
-    50%{left: 680px;}
-    100%{left: 180px;}
+    0%{left: 110px;}
+    50%{left: 600px;}
+    100%{left: 110px;}
 }
 
 #pancakeGameTextDiv {
-    position: fixed;
+    position: absolute;
     text-align: center;
-    background-color: pink;
     font-size: 20px;
     
     left: 50%;
-    top: 250px;
+    top: 125px;
     transform: translateX(-50%);
 }
 
@@ -364,9 +400,46 @@ div {
     width: 100px;
     background-color: pink;
 
-    position: fixed;
-    top: 345px;
-    left: 710px;
+    position: absolute;
+    top: 215px;
+    left: 615px;
 
     cursor: pointer;
+}
+
+
+.customizationBase {
+    height: 230px;
+    width: 200px;
+
+    position: absolute;
+    background-color: pink;
+    left: 150px;
+    top: 85px;
+}
+
+.customizationOptions {
+    height: 370px;
+    width: 200px;
+    overflow-y: scroll;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: absolute;
+    right: 0px;
+    background-color: lightcoral;
+}
+
+.customizationOptions div {
+    height: 170px;
+    width: 170px;
+    background-color: white;
+    margin: auto;
+    cursor: pointer;
+
+    flex-shrink: 0;
 }
