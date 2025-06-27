@@ -103,7 +103,7 @@ div {
     100%{top: 500px;}
 }
 
-.topSign {
+.topSign1, .topSign2, .topSign3 {
     height: auto;
     width: max-content;
     font-size: 30px;
@@ -128,7 +128,7 @@ div {
     100%{top: -100px;}
 }
 
-.nextButton {
+.nextButton1 {
     height: 100px;
     width: 150px;
     background-color: lightgrey;
@@ -213,9 +213,6 @@ div {
 
 .mainDishScreen {
     background-color: lightyellow;
-    opacity: 0;
-    filter: brightness(0%);
-
     display: none;
 }
 
@@ -268,6 +265,11 @@ div {
 .eggsButton {
     background-color: lightsteelblue;
     left: 600px;
+}
+
+@keyframes selectionButtonsDown {
+    0%{top: 150px;}
+    100%{top: 600px;}
 }
 
 .minigame {
@@ -554,4 +556,57 @@ div {
     position: absolute;
     right: 10px;
     top: 170px;
+}
+
+
+.nextButton2 {
+    height: 100px;
+    width: 150px;
+    background-color: lightgrey;
+    position: fixed;
+    right: -100%;
+    top: 450px;
+    cursor: pointer;
+
+}
+
+
+
+.drinksScreen {
+    background-color: lightsteelblue;
+    display: none;
+}
+
+.icedButton, .hotButton, .coffeeButton, .matchaButton, .teaButton {
+    height: 125px;
+    width: 125px;
+
+    position: absolute;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.icedButton {
+    top: 70px;
+    left: 100px;
+}
+
+.hotButton {
+    top: 250px;
+    left: 100px;
+}
+
+.coffeeButton {
+    left: 300px;
+    top: 160px;
+}
+
+.matchaButton {
+    left: 480px;
+    top: 160px;
+}
+
+.teaButton {
+    left: 660px;
+    top: 160px;
 }

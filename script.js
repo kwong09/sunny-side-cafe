@@ -2,12 +2,12 @@ let homeScreen = document.querySelector(".homeScreen");
 let startButton = document.getElementById("startButton");
 
 let orderScreen = document.querySelector(".orderScreen");
-let topSign = document.querySelector(".topSign");
+let topSign1 = document.querySelector(".topSign1");
 let customer = document.querySelector(".customer");
 let counter = document.querySelector(".counter");
 let money = document.querySelector(".money");
 let moneyCount = document.getElementById("moneyCount");
-let nextButton = document.querySelector(".nextButton");
+let nextButton1 = document.querySelector(".nextButton1");
 let customerSpeechBubble = document.querySelector(".customerSpeechBubble");
 
 let mainDishScreen = document.querySelector(".mainDishScreen");
@@ -67,6 +67,13 @@ let timerCircle = document.querySelector(".timerCircle");
 let timerLine = document.querySelector(".timerLine");
 let toastGameText = document.getElementById("toastGameText");
 
+
+let nextButton2 = document.querySelector(".nextButton2");
+
+
+let drinksScreen = document.querySelector(".drinksScreen");
+let topSign2 = document.querySelector(".topSign2");
+
 let score = 0;
 let customerNumber = 1;
 let selectedDish = "none";
@@ -81,10 +88,10 @@ function invisible(obj) {
 }
 
 
-nextButton.addEventListener("click", function() {
-    nextButton.style.animation = "nextButtonRightDisappear 2s ease-in-out forwards";
+nextButton1.addEventListener("click", function() {
+    nextButton1.style.animation = "nextButtonRightDisappear 2s ease-in-out forwards";
     customerSpeechBubble.style.animation = "speechBubbleDown 1s ease-in-out forwards";
-    topSign.style.animation = "signUp 1s ease-in-out forwards";
+    topSign1.style.animation = "signUp 1s ease-in-out forwards";
     customer.style.animation = "customerDown 1s ease-in-out forwards";
 
     setTimeout(function() {
@@ -97,6 +104,10 @@ nextButton.addEventListener("click", function() {
         visible(mainDishScreen);
         mainDishScreen.classList.add("fadeIn");
     }, 2000);
+
+    setTimeout(function() {
+        mainDishScreen.classList.remove("fadeIn");
+    }, 3000);
 })
 
 
@@ -160,6 +171,7 @@ pancakeNextGameButton.addEventListener("click", function() {
 pancakeButter.addEventListener("click", function() {
     pancakeBase.style.backgroundColor = "green";
     selectedDish = "pancakeButter";
+    nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 
@@ -283,3 +295,29 @@ eggsNextGameButton.addEventListener("click", function() {
     eggsGameScreen.style.animation = "gameScreenExit 1s ease-in-out forwards";
     eggsCustomizationScreen.style.animation = "customizationScreenEnter 1s ease-in-out forwards";
 });
+
+
+nextButton2.addEventListener("click", function() {
+    nextButton2.style.animation = "nextButtonRightDisappear 2s ease-in-out forwards";
+    pancakeButton.style.animation = "selectionButtonsDown 1s ease-in-out forwards";
+    toastButton.style.animation = "selectionButtonsDown 1s ease-in-out forwards";
+    eggsButton.style.animation = "selectionButtonsDown 1s ease-in-out forwards";
+    plate.style.animation = "plateOut 1s ease-in-out forwards";
+    topSign2.style.animation = "signUp 1s ease-in-out forwards";
+
+    setTimeout(function() {
+        mainDishScreen.classList.add("fadeOut");
+    }, 1000);
+
+    setTimeout(function() {
+        invisible(mainDishScreen);
+        mainDishScreen.classList.remove("fadeOut");
+        visible(drinksScreen);
+        drinksScreen.classList.add("fadeIn");
+    }, 2000);
+
+    setTimeout(function() {
+        drinksScreen.classList.remove("fadeIn");
+    }, 3000);
+
+})
