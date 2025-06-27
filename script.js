@@ -203,3 +203,83 @@ toastNextGameButton.addEventListener("click", function() {
     toastGameScreen.style.animation = "gameScreenExit 1s ease-in-out forwards";
     toastCustomizationScreen.style.animation = "customizationScreenEnter 1s ease-in-out forwards";
 });
+
+
+let egg1 = document.querySelector(".egg1");
+let egg2 = document.querySelector(".egg2");
+let egg3 = document.querySelector(".egg3");
+let eggsGameText = document.querySelector(".eggsGameText");
+let eggsScore = 0;
+
+setInterval(() => {
+    let randomLeft1 = Math.random() * (420 - 0) + 0;
+    let randomTop1 = Math.random() * (220 - 0) + 0;
+    let randomLeft2 = Math.random() * (420 - 0) + 0;
+    let randomTop2 = Math.random() * (220 - 0) + 0;
+    let randomLeft3 = Math.random() * (420 - 0) + 0;
+    let randomTop3 = Math.random() * (220 - 0) + 0;
+
+    egg1.style.left = randomLeft1 + 'px';
+    egg1.style.top = randomTop1 + 'px';
+    egg2.style.left = randomLeft2 + 'px';
+    egg2.style.top = randomTop2 + 'px';
+    egg3.style.left = randomLeft3 + 'px';
+    egg3.style.top = randomTop3 + 'px';
+}, 750);
+
+egg1.addEventListener("click", function() {
+    let randomLeft1 = Math.random() * (420 - 0) + 0;
+    let randomTop1 = Math.random() * (220 - 0) + 0;
+    eggsScore++;
+    egg1.style.left = randomLeft1 + 'px';
+    egg1.style.top = randomTop1 + 'px';
+
+    eggsGameText.innerHTML = eggsScore;
+
+    if (eggsScore >= 10) {
+        invisible(egg1);
+        invisible(egg2);
+        invisible(egg3);
+        visible(eggsNextGameButton);
+    }
+})
+
+egg2.addEventListener("click", function() {
+    let randomLeft2 = Math.random() * (420 - 0) + 0;
+    let randomTop2 = Math.random() * (220 - 0) + 0;
+    eggsScore++;
+    egg2.style.left = randomLeft2 + 'px';
+    egg2.style.top = randomTop2 + 'px';
+
+    eggsGameText.innerHTML = eggsScore;
+
+    if (eggsScore >= 10) {
+        invisible(egg1);
+        invisible(egg2);
+        invisible(egg3);
+        visible(eggsNextGameButton);
+    }
+})
+
+egg3.addEventListener("click", function() {
+    let randomLeft3 = Math.random() * (420 - 0) + 0;
+    let randomTop3 = Math.random() * (220 - 0) + 0;
+    eggsScore++;
+    egg3.style.left = randomLeft3 + 'px';
+    egg3.style.top = randomTop3 + 'px';
+
+    eggsGameText.innerHTML = eggsScore;
+
+    if (eggsScore >= 10) {
+        invisible(egg1);
+        invisible(egg2);
+        invisible(egg3);
+        visible(eggsNextGameButton);
+    }
+})
+
+
+eggsNextGameButton.addEventListener("click", function() {
+    eggsGameScreen.style.animation = "gameScreenExit 1s ease-in-out forwards";
+    eggsCustomizationScreen.style.animation = "customizationScreenEnter 1s ease-in-out forwards";
+});
