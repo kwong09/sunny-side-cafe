@@ -361,6 +361,8 @@ nextButton2.addEventListener("click", function () {
   plate.style.animation = "plateOut 1s ease-in-out forwards";
   topSign2.style.animation = "signUp 1s ease-in-out forwards";
 
+  food.style.animation = "plateOut 1s ease-in-out forwards";
+
   setTimeout(function () {
     mainDishScreen.classList.add("fadeOut");
   }, 1000);
