@@ -274,7 +274,16 @@ div {
   display: none;
 }
 
-.plate {
+.mainDish {
+  height: 150px;
+  width: 150px;
+
+  position: absolute;
+  left: 15px;
+  background-image: url("/assets/blankImage.png");
+}
+
+.food {
   height: 180px;
   width: 250px;
   background-color: green;
@@ -319,17 +328,17 @@ div {
 }
 
 .pancakeButton {
-  background-color: lightblue;
+  background-image: url("/assets/pancakePlain.png");
   left: 150px;
 }
 
 .toastButton {
-  background-color: lightseagreen;
+  background-image: url("/assets/toastPlain.png");
   left: 375px;
 }
 
 .eggsButton {
-  background-color: lightsteelblue;
+  background-image: url("/assets/eggsSunnySideUp.png");
   left: 600px;
 }
 
@@ -504,13 +513,24 @@ div {
 }
 
 .customizationBase {
-  height: 230px;
+  height: 200px;
   width: 200px;
 
   position: absolute;
-  background-color: pink;
   left: 150px;
   top: 85px;
+}
+
+.pancakeBase {
+  background-image: url("/assets/pancakePlain.png");
+}
+
+.toastBase {
+  background-image: url("/assets/toastPlain.png");
+}
+
+.eggsBase {
+  background-image: url("/assets/eggsSunnySideUp.png");
 }
 
 .customizationOptions {
@@ -535,6 +555,7 @@ div {
   background-color: white;
   margin: auto;
   cursor: pointer;
+  border-radius: 10px;
 
   flex-shrink: 0;
 }
@@ -652,6 +673,22 @@ div {
   position: absolute;
   right: 10px;
   top: 170px;
+}
+
+.eggsSunnySideUp {
+  background-image: url("/assets/eggsSunnySideUp.png");
+}
+
+.eggsOmelette {
+  background-image: url("/assets/eggsOmelette.png");
+}
+
+.eggsScrambled {
+  background-image: url("/assets/eggsScrambled.png");
+}
+
+.eggsHardBoiled {
+  background-image: url("/assets/eggsHardBoiled.png");
 }
 
 .nextButton2 {
