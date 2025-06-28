@@ -435,6 +435,54 @@ div {
   }
 }
 
+.pancakePlain {
+  background-image: url("/assets/blankImage.png");
+}
+
+.pancakeFruits {
+  background-image: url("/assets/fruits.png");
+}
+
+.pancakeButter {
+  background-image: url("/assets/butter.png");
+}
+
+.pancakeWhippedCream {
+  background-image: url("/assets/whippedCream.png");
+}
+
+.toastPlain {
+  background-image: url("/assets/blankImage.png");
+}
+
+.toastAvocadoEgg {
+  background-image: url("/assets/avocado.png");
+}
+
+.toastPBJ {
+  background-image: url("/assets/pbj.png");
+}
+
+.toastChocolate {
+  background-image: url("/assets/chocolate.png");
+}
+
+.eggsSunnySideUp {
+  background-image: url("/assets/eggsSunnySideUp.png");
+}
+
+.eggsOmelette {
+  background-image: url("/assets/eggsOmelette.png");
+}
+
+.eggsScrambled {
+  background-image: url("/assets/eggsScrambled.png");
+}
+
+.eggsHardBoiled {
+  background-image: url("/assets/eggsHardBoiled.png");
+}
+
 #pancakePan {
   height: 150px;
   width: 350px;
@@ -513,12 +561,12 @@ div {
 }
 
 .customizationBase {
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
 
   position: absolute;
-  left: 150px;
-  top: 85px;
+  left: 50px;
+  top: 15px;
 }
 
 .pancakeBase {
@@ -673,22 +721,6 @@ div {
   position: absolute;
   right: 10px;
   top: 170px;
-}
-
-.eggsSunnySideUp {
-  background-image: url("/assets/eggsSunnySideUp.png");
-}
-
-.eggsOmelette {
-  background-image: url("/assets/eggsOmelette.png");
-}
-
-.eggsScrambled {
-  background-image: url("/assets/eggsScrambled.png");
-}
-
-.eggsHardBoiled {
-  background-image: url("/assets/eggsHardBoiled.png");
 }
 
 .nextButton2 {
