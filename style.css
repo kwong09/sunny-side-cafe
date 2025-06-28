@@ -1,612 +1,708 @@
 div {
-    background-size: cover;
-    font-family: "Gochi Hand";
+  background-size: cover;
+  font-family: "Gochi Hand";
 }
 
 .background {
-    height: 600px;
-    width: 900px;
+  height: 600px;
+  width: 900px;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    
-    background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  background-color: black;
 }
 
 .fadeOut {
-    animation: fadeOut 0.5s ease-in-out forwards;
+  animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
-    0%{filter: brightness(100%); opacity: 1;}
-    100%{filter: brightness(0%); opacity: 0;}
+  0% {
+    filter: brightness(100%);
+    opacity: 1;
+  }
+  100% {
+    filter: brightness(0%);
+    opacity: 0;
+  }
 }
 
 .fadeIn {
-    animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    0%{filter: brightness(0%); opacity: 0;}
-    100%{filter: brightness(100%); opacity: 1;}
+  0% {
+    filter: brightness(0%);
+    opacity: 0;
+  }
+  100% {
+    filter: brightness(100%);
+    opacity: 1;
+  }
 }
 
 .screen {
-    height: 600px;
-    width: 900px;
+  height: 600px;
+  width: 900px;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .homeScreen {
-    background-color: lightblue;
+  background-color: lightblue;
 }
-
 
 #startButton {
-    height: 80px;
-    width: 170px;
-    text-align: center;
+  height: 80px;
+  width: 170px;
+  text-align: center;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background-color: white;
+  background-color: white;
 }
 
-
 .orderScreen {
-    background-color: lightpink;
-    display: none;
+  background-image: url("/assets/orderBackground.png");
+  display: none;
 }
 
 .counter {
-    height: 200px;
-    width: 900px;
+  height: 200px;
+  width: 900px;
 
-    position: fixed;
-    top: 400px;
-    background-color: lightslategray;
+  position: fixed;
+  top: 400px;
+  background-color: rgb(83, 100, 159);
+}
+
+.orderCounter {
+  background-image: url("/assets/orderCounter.png");
 }
 
 .customer {
-    height: 250px;
-    width: 200px;
+  height: 250px;
+  width: 200px;
 
-    position: fixed;
-    top: 500px;
-    left: 150px;
-    background-color: lightcoral;
+  position: fixed;
+  top: 500px;
+  left: 150px;
+  background-image: url("/assets/customer1.png");
 
-    animation: customerUp 1s ease-in-out forwards;
+  animation: customerUp 1s ease-in-out forwards;
 }
 
 @keyframes customerUp {
-    0%{top: 500px;}
-    100%{top: 150px;}
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 150px;
+  }
 }
-
 
 @keyframes customerDown {
-    0%{top: 150px;}
-    100%{top: 500px;}
+  0% {
+    top: 150px;
+  }
+  100% {
+    top: 500px;
+  }
 }
 
-.topSign1, .topSign2, .topSign3 {
-    height: auto;
-    width: max-content;
-    font-size: 30px;
-    padding: 20px;
+.topSign1,
+.topSign2,
+.topSign3 {
+  height: auto;
+  width: max-content;
+  font-size: 30px;
+  padding: 20px;
 
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 
-    background-color: lightcyan;
+  background-color: antiquewhite;
 
-    animation: signDown 1s ease-in-out forwards;
+  animation: signDown 1s ease-in-out forwards;
 }
 
 @keyframes signDown {
-    0%{top: -100px;}
-    100%{top: 0px;}
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 @keyframes signUp {
-    0%{top: 0px;}
-    100%{top: -100px;}
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -100px;
+  }
 }
 
 .nextButton1 {
-    height: 100px;
-    width: 150px;
-    background-color: lightgrey;
-    position: fixed;
-    right: -100%;
-    top: 450px;
-    cursor: pointer;
+  height: 100px;
+  width: 150px;
+  background-image: url("/assets/nextButton.png");
+  position: fixed;
+  right: -100%;
+  top: 450px;
+  cursor: pointer;
 
-    animation-delay: 4s;
-    animation: nextButtonRightAppear 2s ease-in-out forwards;
-
+  animation-delay: 4s;
+  animation: nextButtonRightAppear 2s ease-in-out forwards;
 }
 
 @keyframes nextButtonRightAppear {
-    0%{right: -100%;}
-    100%{right: 0%;}
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
 }
 
-
 @keyframes nextButtonRightDisappear {
-    0%{right: 0%;}
-    100%{right: -100%;}
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
 }
 
 .customerSpeechBubble {
-    height: auto;
-    width: 0px;
-    padding: 20px;
-    border-radius: 20px;
+  height: auto;
+  width: 0px;
+  padding: 20px;
+  border-radius: 20px;
 
-    position: fixed;
-    top: 25%;
-    left: 65%;
-    transform: translateX(-50%);
+  position: fixed;
+  top: 25%;
+  left: 65%;
+  transform: translateX(-50%);
 
-    background-color: lightcyan;
+  background-color: antiquewhite;
 
-    animation: expandRight 1s ease-in-out forwards, floating 2s ease-in-out infinite;
+  animation: expandRight 1s ease-in-out forwards,
+    floating 2s ease-in-out infinite;
 }
 
 @keyframes floating {
-    0%{top: 25%;}
-    50%{top: 27%;}
-    100%{top: 25%;}
+  0% {
+    top: 25%;
+  }
+  50% {
+    top: 27%;
+  }
+  100% {
+    top: 25%;
+  }
 }
 
 @keyframes expandRight {
-    0%{width: 0px;}
-    100%{width: 300px;}
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 300px;
+  }
 }
 
-
 @keyframes speechBubbleDown {
-    0%{top: 25%; width: 300px;}
-    100%{top: 100%; width: 300px;}
+  0% {
+    top: 25%;
+    width: 300px;
+  }
+  100% {
+    top: 100%;
+    width: 300px;
+  }
 }
 
 .customerSpeechBubble span {
-    font-size: 20px;
-    width: 0ch;
-    opacity: 0;
-    white-space: nowrap;
-    display: inline-block;
-    overflow: hidden;
+  font-size: 20px;
+  width: 0ch;
+  opacity: 0;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
 
-    animation: textTyping 1s steps(100) forwards;
-    animation-delay: 1s;
+  animation: textTyping 1s steps(100) forwards;
+  animation-delay: 1s;
 }
 
 @keyframes textTyping {
-    from{width: 0ch; opacity: 1;}
-    to{width: 100ch; opacity: 1;}
+  from {
+    width: 0ch;
+    opacity: 1;
+  }
+  to {
+    width: 100ch;
+    opacity: 1;
+  }
 }
 
 .money {
-    font-size: 30px;
-    position: fixed;
-    top: 10px;
-    right: 20px;
+  font-size: 30px;
+  position: fixed;
+  top: 10px;
+  right: 20px;
 }
 
-
 .mainDishScreen {
-    background-color: lightyellow;
-    display: none;
+  background-color: lightyellow;
+  display: none;
 }
 
 .plate {
-    height: 180px;
-    width: 250px;
-    background-color: green;
+  height: 180px;
+  width: 250px;
+  background-color: green;
 
-    position: fixed;
-    left: -125px;
-    bottom: 0px;
+  position: fixed;
+  left: -125px;
+  bottom: 0px;
 
-    animation: plateIn 1s ease-in-out forwards;
+  animation: plateIn 1s ease-in-out forwards;
 }
 
 @keyframes plateIn {
-    0%{left: -125px;}
-    100%{left: 325px;}
+  0% {
+    left: -125px;
+  }
+  100% {
+    left: 325px;
+  }
 }
 
 @keyframes plateOut {
-    0%{left: 325px;}
-    100%{left: 900px;}
+  0% {
+    left: 325px;
+  }
+  100% {
+    left: 900px;
+  }
 }
 
 .selection {
-    height: 150px;
-    width: 150px;
-    top: 150px;
+  height: 150px;
+  width: 150px;
+  top: 150px;
 
-    position: fixed;
-    cursor: pointer;
+  position: fixed;
+  cursor: pointer;
 }
 
 .selection:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .pancakeButton {
-    background-color: lightblue;
-    left: 150px;
+  background-color: lightblue;
+  left: 150px;
 }
 
 .toastButton {
-    background-color: lightseagreen;
-    left: 375px;
+  background-color: lightseagreen;
+  left: 375px;
 }
 
 .eggsButton {
-    background-color: lightsteelblue;
-    left: 600px;
+  background-color: lightsteelblue;
+  left: 600px;
 }
 
 @keyframes selectionButtonsDown {
-    0%{top: 150px;}
-    100%{top: 600px;}
+  0% {
+    top: 150px;
+  }
+  100% {
+    top: 600px;
+  }
 }
 
 .minigame {
-    height: 500px;
-    width: 800px;
-    background-color: lightgray;
-    overflow: hidden;
+  height: 500px;
+  width: 800px;
+  background-color: lightgray;
+  overflow: hidden;
 
-    position: fixed;
-    left: 50px;
-    top: 600px;
-    z-index: 10;
+  position: fixed;
+  left: 50px;
+  top: 600px;
+  z-index: 10;
 
-    animation: none;
+  animation: none;
 }
 
 @keyframes minigameUp {
-    0%{top: 600px;}
-    100%{top: 50px;}
+  0% {
+    top: 600px;
+  }
+  100% {
+    top: 50px;
+  }
 }
 
 @keyframes minigameDown {
-    0%{top: 50px;}
-    100%{top: 600px;}
+  0% {
+    top: 50px;
+  }
+  100% {
+    top: 600px;
+  }
 }
 
 .closeButton {
-    height: 50px;
-    width: 50px;
-    background-color: red;
+  height: 50px;
+  width: 50px;
+  background-color: red;
 
-    position: absolute;
-    cursor: pointer;
-    left: 750px;
+  position: absolute;
+  cursor: pointer;
+  left: 750px;
 }
 
 .gameScreen {
-    height: 400px;
-    width: 750px;
+  height: 400px;
+  width: 750px;
 
-    position: absolute;
-    left: 25px;
-    top: 80px;
-    background-color: white;
+  position: absolute;
+  left: 25px;
+  top: 80px;
+  background-color: white;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 @keyframes gameScreenExit {
-    0%{left: 25px;}
-    100%{left: -800px;}
+  0% {
+    left: 25px;
+  }
+  100% {
+    left: -800px;
+  }
 }
 
 .customizationScreen {
-    height: 400px;
-    width: 750px;
+  height: 400px;
+  width: 750px;
 
-    position: absolute;
-    left: 800px;
-    top: 80px;
-    background-color: white;
+  position: absolute;
+  left: 800px;
+  top: 80px;
+  background-color: white;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
 @keyframes customizationScreenEnter {
-    0%{left: 800px;}
-    100%{left: 25px;}
+  0% {
+    left: 800px;
+  }
+  100% {
+    left: 25px;
+  }
 }
 
 #pancakePan {
-    height: 150px;
-    width: 350px;
+  height: 150px;
+  width: 350px;
 
-    position: absolute;
-    left: 200px;
-    bottom: 80px;
+  position: absolute;
+  left: 200px;
+  bottom: 80px;
 
-    background-color: blue;
+  background-color: blue;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #sliderBar {
-    height: 20px;
-    width: 500px;
+  height: 20px;
+  width: 500px;
 
-    background: linear-gradient(0.25turn, lightcoral, lightgreen, lightcoral);
-    position: absolute;
-    top: 42px;
-    left: 125px;
+  background: linear-gradient(0.25turn, lightcoral, lightgreen, lightcoral);
+  position: absolute;
+  top: 42px;
+  left: 125px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 #sliderCircle {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 
-    background-color: pink;
-    position: absolute;
-    top: 25px;
-    left: 110px;
+  background-color: pink;
+  position: absolute;
+  top: 25px;
+  left: 110px;
 
-    border-radius: 100%;
+  border-radius: 100%;
 
-    animation: sliderAnimation 1.5s infinite ease-in-out;
+  animation: sliderAnimation 1.5s infinite ease-in-out;
 }
 
 @keyframes sliderAnimation {
-    0%{left: 110px;}
-    50%{left: 600px;}
-    100%{left: 110px;}
+  0% {
+    left: 110px;
+  }
+  50% {
+    left: 600px;
+  }
+  100% {
+    left: 110px;
+  }
 }
 
 #pancakeGameTextDiv {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    
-    left: 50%;
-    top: 125px;
-    transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+
+  left: 50%;
+  top: 125px;
+  transform: translateX(-50%);
 }
 
 .nextGameButton {
-    display: none;
-    height: 60px;
-    width: 100px;
-    background-color: pink;
+  display: none;
+  height: 60px;
+  width: 100px;
+  background-color: pink;
 
-    position: absolute;
+  position: absolute;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .pancakeNextGameButton {
-    top: 215px;
-    left: 615px;
+  top: 215px;
+  left: 615px;
 }
 
-
 .customizationBase {
-    height: 230px;
-    width: 200px;
+  height: 230px;
+  width: 200px;
 
-    position: absolute;
-    background-color: pink;
-    left: 150px;
-    top: 85px;
+  position: absolute;
+  background-color: pink;
+  left: 150px;
+  top: 85px;
 }
 
 .customizationOptions {
-    height: 370px;
-    width: 200px;
-    overflow-y: scroll;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  height: 370px;
+  width: 200px;
+  overflow-y: scroll;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    position: absolute;
-    right: 0px;
-    background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  position: absolute;
+  right: 0px;
+  background-color: lightcoral;
 }
 
 .customizationOptions div {
-    height: 170px;
-    width: 170px;
-    background-color: white;
-    margin: auto;
-    cursor: pointer;
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  margin: auto;
+  cursor: pointer;
 
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
-
-
-
-
 .toaster {
-    height: 200px;
-    width: 200px;
-    background-color: blue;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
 
-    position: absolute;
-    top: 100px;
-    left: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
 
 .timerCircle {
-    height: 200px;
-    width: 200px;
-    background: conic-gradient(lightgreen, rgb(255, 229, 113), lightcoral, lightcoral, lightcoral, lightcoral, lightcoral, rgb(255, 229, 113), lightgreen);
+  height: 200px;
+  width: 200px;
+  background: conic-gradient(
+    lightgreen,
+    rgb(255, 229, 113),
+    lightcoral,
+    lightcoral,
+    lightcoral,
+    lightcoral,
+    lightcoral,
+    rgb(255, 229, 113),
+    lightgreen
+  );
 
-    position: absolute;
-    top: 100px;
-    left: 350px;
+  position: absolute;
+  top: 100px;
+  left: 350px;
 
-    border-radius: 100%;
-    cursor: pointer;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .timerLine {
-    height: 5px;
-    width: 100px;
-    background-color: black;
+  height: 5px;
+  width: 100px;
+  background-color: black;
 
-    position: absolute;
-    top: 200px;
-    left: 350px;
+  position: absolute;
+  top: 200px;
+  left: 350px;
 
-    transform-origin: center right;
-    animation: timerLineRotate 1s infinite linear;
+  transform-origin: center right;
+  animation: timerLineRotate 1s infinite linear;
 }
 
 @keyframes timerLineRotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .toastNextGameButton {
-    top: 170px;
-    left: 625px;
+  top: 170px;
+  left: 625px;
 }
 
 #toastGameTextDiv {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    
-    left: 50%;
-    top: 50px;
-    transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
 }
 
-
-
-
 .poppingScreen {
-    height: 300px;
-    width: 500px;
+  height: 300px;
+  width: 500px;
 
-    position: absolute;
-    left: 125px;
-    top: 50px;
+  position: absolute;
+  left: 125px;
+  top: 50px;
 
-    background-color: pink;
+  background-color: pink;
 }
 
 .poppingItem {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: 220px;
-    cursor: pointer;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 220px;
+  cursor: pointer;
 
-    background-color: green;
+  background-color: green;
 }
 
-
 .eggsGameTextDiv {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .eggsGameTextDiv2 {
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    top: 370px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .eggsNextGameButton {
-    position: absolute;
-    right: 10px;
-    top: 170px;
+  position: absolute;
+  right: 10px;
+  top: 170px;
 }
-
 
 .nextButton2 {
-    height: 100px;
-    width: 150px;
-    background-color: lightgrey;
-    position: fixed;
-    right: -100%;
-    top: 450px;
-    cursor: pointer;
-
+  height: 100px;
+  width: 150px;
+  background-color: lightgrey;
+  position: fixed;
+  right: -100%;
+  top: 450px;
+  cursor: pointer;
 }
-
-
 
 .drinksScreen {
-    background-color: lightsteelblue;
-    display: none;
+  background-color: lightsteelblue;
+  display: none;
 }
 
-.icedButton, .hotButton, .coffeeButton, .matchaButton, .teaButton {
-    height: 125px;
-    width: 125px;
+.icedButton,
+.hotButton,
+.coffeeButton,
+.matchaButton,
+.teaButton {
+  height: 125px;
+  width: 125px;
 
-    position: absolute;
-    background-color: blue;
-    cursor: pointer;
+  position: absolute;
+  background-color: blue;
+  cursor: pointer;
 }
 
 .icedButton {
-    top: 70px;
-    left: 100px;
+  top: 70px;
+  left: 100px;
 }
 
 .hotButton {
-    top: 250px;
-    left: 100px;
+  top: 250px;
+  left: 100px;
 }
 
 .coffeeButton {
-    left: 300px;
-    top: 160px;
+  left: 300px;
+  top: 160px;
 }
 
 .matchaButton {
-    left: 480px;
-    top: 160px;
+  left: 480px;
+  top: 160px;
 }
 
 .teaButton {
-    left: 660px;
-    top: 160px;
+  left: 660px;
+  top: 160px;
 }

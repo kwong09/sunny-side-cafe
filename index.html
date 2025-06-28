@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunny Side Cafe</title>
-  <link rel="stylesheet" href="style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sunny Side Cafe</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="background"></div>
 
     <div class="screen homeScreen">
-      <div id="startButton" onclick="invisible(homeScreen); visible(orderScreen)">Start</div>
+      <div
+        id="startButton"
+        onclick="invisible(homeScreen); visible(orderScreen)"
+      >
+        Start
+      </div>
     </div>
 
     <div class="screen orderScreen">
       <div class="topSign1">ORDER HERE</div>
 
       <div class="customer"></div>
-      <div class="customerSpeechBubble"><span>Good morning! Could I please get a <br>simple pancake with butter on top? <br>Along with a nice, hot cup of coffee<br> (with no toppings). Thank you!</span></div>
-      <div class="counter"></div>
+      <div class="customerSpeechBubble">
+        <span
+          >Good morning! Could I please get a <br />simple pancake with butter
+          on top? <br />Along with a nice, hot cup of coffee<br />
+          (with no toppings). Thank you!</span
+        >
+      </div>
+      <div class="counter orderCounter"></div>
       <div class="money">$<span id="moneyCount">100</span></div>
-      <div class="nextButton1">Next</div>
+      <div class="nextButton1"></div>
     </div>
 
     <div class="screen mainDishScreen">
@@ -41,17 +54,20 @@
         <div class="plate"></div>
       </div>
 
-
       <div class="minigame pancakeGame">
         <div class="closeButton pancakeClose"></div>
         <div class="gameScreen pancakeGameScreen">
           <div id="pancakePan"></div>
           <div id="sliderBar"></div>
           <div id="sliderCircle"></div>
-          <div id="pancakeGameTextDiv"><span id="pancakeGameText">Click the pan to stop at the right time!</span></div>
+          <div id="pancakeGameTextDiv">
+            <span id="pancakeGameText"
+              >Click the pan to stop at the right time!</span
+            >
+          </div>
           <div class="nextGameButton pancakeNextGameButton"></div>
         </div>
-        
+
         <div class="customizationScreen pancakeCustomizationScreen">
           <div class="customizationBase pancakeBase"></div>
           <div class="customizationOptions">
@@ -62,8 +78,6 @@
           </div>
         </div>
       </div>
-      
-
 
       <div class="minigame toastGame">
         <div class="closeButton toastClose"></div>
@@ -71,10 +85,12 @@
           <div class="toaster"></div>
           <div class="timerCircle"></div>
           <div class="timerLine"></div>
-          <div id="toastGameTextDiv"><span id="toastGameText">Stop the timer at the perfect time!</span></div>
+          <div id="toastGameTextDiv">
+            <span id="toastGameText">Stop the timer at the perfect time!</span>
+          </div>
           <div class="nextGameButton toastNextGameButton"></div>
         </div>
-        
+
         <div class="customizationScreen toastCustomizationScreen">
           <div class="customizationBase toastBase"></div>
           <div class="customizationOptions">
@@ -89,7 +105,9 @@
       <div class="minigame eggsGame">
         <div class="closeButton eggsClose"></div>
         <div class="gameScreen eggsGameScreen">
-          <div class="eggsGameTextDiv">Score: <span class="eggsGameText">0</span></div>
+          <div class="eggsGameTextDiv">
+            Score: <span class="eggsGameText">0</span>
+          </div>
           <div class="eggsGameTextDiv2">Collect 10 eggs!</div>
           <div class="poppingScreen">
             <div class="poppingItem egg1"></div>
@@ -98,7 +116,7 @@
           </div>
           <div class="nextGameButton eggsNextGameButton"></div>
         </div>
-        
+
         <div class="customizationScreen eggsCustomizationScreen">
           <div class="customizationBase eggsBase"></div>
           <div class="customizationOptions">
@@ -115,7 +133,7 @@
 
     <div class="screen drinksScreen">
       <div class="topSign3">DRINKS</div>
-      
+
       <div class="icedButton"></div>
       <div class="hotButton"></div>
       <div class="coffeeButton"></div>
@@ -129,6 +147,6 @@
       </div>
     </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
