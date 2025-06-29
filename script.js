@@ -108,8 +108,8 @@ function invisible(obj) {
 customerOption1.addEventListener("click", function() {
   reset();
   round = 1;
-  customer.style.backgroundImage = "url('/assets/customer1.png')";
-  customer2.style.backgroundImage = "url('/assets/customer1.png')";
+  customer.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer1.png')";
+  customer2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer1.png')";
   invisible(customerScreen);
   visible(orderScreen);
   customerRequest.innerHTML = "Good morning! Could I please get a <br />simple pancake with butter on top? <br />Along with a nice, hot cup of coffee<br/>(with no toppings). Thank you!"
@@ -118,8 +118,8 @@ customerOption1.addEventListener("click", function() {
 customerOption2.addEventListener("click", function() {
   reset();
   round = 2;
-  customer.style.backgroundImage = "url('/assets/customer2.png')";
-  customer2.style.backgroundImage = "url('/assets/customer2.png')";
+  customer.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer2.png')";
+  customer2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer2.png')";
   invisible(customerScreen);
   visible(orderScreen);
   customerRequest.innerHTML = "Um, hello..? Can I get a uh...<br />avocado egg toast? And can I get a... <br />iced matcha drink with... milk in it?<br/>Uh. Yeah that's it. Thanks."
@@ -128,8 +128,8 @@ customerOption2.addEventListener("click", function() {
 customerOption3.addEventListener("click", function() {
   reset();
   round = 3;
-  customer.style.backgroundImage = "url('/assets/customer3.png')";
-  customer2.style.backgroundImage = "url('/assets/customer3.png')";
+  customer.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer3.png')";
+  customer2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/customer3.png')";
   invisible(customerScreen);
   visible(orderScreen);
   customerRequest.innerHTML = "HI!!! May I order a hard boiled egg?<br />I would also like an iced tea with<br />a lemon on top! Thank you so much!<br/>Have a nice day!!!"
@@ -218,30 +218,30 @@ pancakeNextGameButton.addEventListener("click", function () {
 //pancake customization options -- updates pancake base, actual plate, and selected dish
 
 pancakeButter.addEventListener("click", function () {
-  pancakeBase.style.backgroundImage = "url('/assets/pancakeButter.png')";
+  pancakeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeButter.png')";
   selectedDish = "pancakeButter";
-  mainDish.style.backgroundImage = "url('/assets/pancakeButter.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeButter.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 pancakeFruits.addEventListener("click", function () {
-  pancakeBase.style.backgroundImage = "url('/assets/pancakeFruits.png')";
+  pancakeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeFruits.png')";
   selectedDish = "pancakeFruits";
-  mainDish.style.backgroundImage = "url('/assets/pancakeFruits.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeFruits.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 pancakeWhippedCream.addEventListener("click", function () {
-  pancakeBase.style.backgroundImage = "url('/assets/pancakeWhippedCream.png')";
+  pancakeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeWhippedCream.png')";
   selectedDish = "pancakeWhippedCream";
-  mainDish.style.backgroundImage = "url('/assets/pancakeWhippedCream.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakeWhippedCream.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 pancakePlain.addEventListener("click", function () {
-  pancakeBase.style.backgroundImage = "url('/assets/pancakePlain.png')";
+  pancakeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakePlain.png')";
   selectedDish = "pancakePlain";
-  mainDish.style.backgroundImage = "url('/assets/pancakePlain.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakePlain.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
@@ -289,30 +289,30 @@ toastNextGameButton.addEventListener("click", function () {
 //toast customization options
 
 toastAvocadoEgg.addEventListener("click", function () {
-  toastBase.style.backgroundImage = "url('/assets/toastAvocadoEgg.png')";
+  toastBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastAvocadoEgg.png')";
   selectedDish = "toastAvocadoEgg";
-  mainDish.style.backgroundImage = "url('/assets/toastAvocadoEgg.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastAvocadoEgg.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 toastChocolate.addEventListener("click", function () {
-  toastBase.style.backgroundImage = "url('/assets/toastChocolate.png')";
+  toastBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastChocolate.png')";
   selectedDish = "toastChocolate";
-  mainDish.style.backgroundImage = "url('/assets/toastChocolate.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastChocolate.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 toastPBJ.addEventListener("click", function () {
-  toastBase.style.backgroundImage = "url('/assets/toastPBJ.png')";
+  toastBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastPBJ.png')";
   selectedDish = "toastPBJ";
-  mainDish.style.backgroundImage = "url('/assets/toastPBJ.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastPBJ.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 toastPlain.addEventListener("click", function () {
-  toastBase.style.backgroundImage = "url('/assets/toastPlain.png')";
+  toastBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastPlain.png')";
   selectedDish = "toastPlain";
-  mainDish.style.backgroundImage = "url('/assets/toastPlain.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastPlain.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
@@ -422,7 +422,7 @@ nextButton2.addEventListener("click", function () {
   topSign2.style.animation = "signUp 1s ease-in-out forwards";
 
   food.style.animation = "plateOut 1s ease-in-out forwards";
-  mainDish2.style.backgroundImage = "url('/assets/" + selectedDish + ".png')";
+  mainDish2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/" + selectedDish + ".png')";
 
   setTimeout(function () {
     mainDishScreen.classList.add("fadeOut");
@@ -443,30 +443,30 @@ nextButton2.addEventListener("click", function () {
 //egg customization options
 
 eggsSunnySideUp.addEventListener("click", function () {
-  eggsBase.style.backgroundImage = "url('/assets/eggsSunnySideUp.png')";
+  eggsBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png')";
   selectedDish = "eggsSunnySideUp";
-  mainDish.style.backgroundImage = "url('/assets/eggsSunnySideUp.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 eggsOmelette.addEventListener("click", function () {
-  eggsBase.style.backgroundImage = "url('/assets/eggsOmelette.png')";
+  eggsBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsOmelette.png')";
   selectedDish = "eggsOmelette";
-  mainDish.style.backgroundImage = "url('/assets/eggsOmelette.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsOmelette.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 eggsHardBoiled.addEventListener("click", function () {
-  eggsBase.style.backgroundImage = "url('/assets/eggsHardBoiled.png')";
+  eggsBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsHardBoiled.png')";
   selectedDish = "eggsHardBoiled";
-  mainDish.style.backgroundImage = "url('/assets/eggsHardBoiled.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsHardBoiled.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
 eggsScrambled.addEventListener("click", function () {
-  eggsBase.style.backgroundImage = "url('/assets/eggsScrambled.png')";
+  eggsBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsScrambled.png')";
   selectedDish = "eggsScrambled";
-  mainDish.style.backgroundImage = "url('/assets/eggsScrambled.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsScrambled.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
 
@@ -498,17 +498,17 @@ icedButton.addEventListener("click", function () {
   coffeeText.style.animation = "drinksTextUp 1s ease-in-out forwards";
   matchaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
   teaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
-  coffeeButton.style.backgroundImage = "url('/assets/coldCoffee.png')";
-  matchaButton.style.backgroundImage = "url('/assets/coldMatcha.png')";
-  teaButton.style.backgroundImage = "url('/assets/coldTea.png')";
+  coffeeButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldCoffee.png')";
+  matchaButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldMatcha.png')";
+  teaButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldTea.png')";
 
-  coffee1.style.backgroundImage = "url('/assets/milk.png')";
-  matcha1.style.backgroundImage = "url('/assets/milk.png')";
-  tea1.style.backgroundImage = "url('/assets/lemon.png')";
+  coffee1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/milk.png')";
+  matcha1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/milk.png')";
+  tea1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/lemon.png')";
 
-  coffeeBase.style.backgroundImage = "url('/assets/emptyCup.png')";
-  matchaBase.style.backgroundImage = "url('/assets/emptyCup.png')";
-  teaBase.style.backgroundImage = "url('/assets/emptyCup.png')";
+  coffeeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyCup.png')";
+  matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyCup.png')";
+  teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyCup.png')";
 
   temperature = "cold";
 });
@@ -519,17 +519,17 @@ hotButton.addEventListener("click", function () {
   coffeeText.style.animation = "drinksTextUp 1s ease-in-out forwards";
   matchaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
   teaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
-  coffeeButton.style.backgroundImage = "url('/assets/hotCoffee.png')";
-  matchaButton.style.backgroundImage = "url('/assets/hotMatcha.png')";
-  teaButton.style.backgroundImage = "url('/assets/hotTea.png')";
+  coffeeButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotCoffee.png')";
+  matchaButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotMatcha.png')";
+  teaButton.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotTea.png')";
 
-  coffee1.style.backgroundImage = "url('/assets/whippedCream.png')";
-  matcha1.style.backgroundImage = "url('/assets/strawberry.png')";
-  tea1.style.backgroundImage = "url('/assets/lemon.png')";
+  coffee1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/whippedCream.png')";
+  matcha1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/strawberry.png')";
+  tea1.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/lemon.png')";
 
-  coffeeBase.style.backgroundImage = "url('/assets/emptyMug.png')";
-  matchaBase.style.backgroundImage = "url('/assets/emptyMug.png')";
-  teaBase.style.backgroundImage = "url('/assets/emptyMug.png')";
+  coffeeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyMug.png')";
+  matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyMug.png')";
+  teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyMug.png')";
 
   temperature = "hot";
 });
@@ -577,13 +577,13 @@ teaClose.addEventListener("click", function () {
 coffee1.addEventListener("click", function () {
   if (temperature === "hot") {
     coffeeBase.style.backgroundImage =
-      "url('/assets/hotCoffeeWhippedCream.png')";
-    drink2.style.backgroundImage = "url('/assets/hotCoffeeWhippedCream.png')";
+      "url('https://kwong09.github.io/sunny-side-cafe/assets/hotCoffeeWhippedCream.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotCoffeeWhippedCream.png')";
     selectedDrinkTopping = "whippedCream";
   }
   if (temperature === "cold") {
-    coffeeBase.style.backgroundImage = "url('/assets/coldCoffeeMilk.png')";
-    drink2.style.backgroundImage = "url('/assets/coldCoffeeMilk.png')";
+    coffeeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldCoffeeMilk.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldCoffeeMilk.png')";
     selectedDrinkTopping = "milk";
   }
   selectedDrink = "coffee";
@@ -593,13 +593,13 @@ coffee1.addEventListener("click", function () {
 
 coffee2.addEventListener("click", function () {
   if (temperature === "hot") {
-    coffeeBase.style.backgroundImage = "url('/assets/hotCoffee.png')";
-    drink2.style.backgroundImage = "url('/assets/hotCoffee.png')";
+    coffeeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotCoffee.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotCoffee.png')";
     selectedDrinkTopping = "none";
   }
   if (temperature === "cold") {
-    coffeeBase.style.backgroundImage = "url('/assets/coldCoffee.png')";
-    drink2.style.backgroundImage = "url('/assets/coldCoffee.png')";
+    coffeeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldCoffee.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldCoffee.png')";
     selectedDrinkTopping = "none";
   }
   selectedDrink = "coffee";
@@ -609,13 +609,13 @@ coffee2.addEventListener("click", function () {
 
 matcha1.addEventListener("click", function () {
   if (temperature === "hot") {
-    matchaBase.style.backgroundImage = "url('/assets/hotMatchaStrawberry.png')";
-    drink2.style.backgroundImage = "url('/assets/hotMatchaStrawberry.png')";
+    matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotMatchaStrawberry.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotMatchaStrawberry.png')";
     selectedDrinkTopping = "strawberry";
   }
   if (temperature === "cold") {
-    matchaBase.style.backgroundImage = "url('/assets/coldMatchaMilk.png')";
-    drink2.style.backgroundImage = "url('/assets/coldMatchaMilk.png')";
+    matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldMatchaMilk.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldMatchaMilk.png')";
     selectedDrinkTopping = "milk";
   }
   selectedDrink = "matcha";
@@ -625,13 +625,13 @@ matcha1.addEventListener("click", function () {
 
 matcha2.addEventListener("click", function () {
   if (temperature === "hot") {
-    matchaBase.style.backgroundImage = "url('/assets/hotMatcha.png')";
-    drink2.style.backgroundImage = "url('/assets/hotMatcha.png')";
+    matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotMatcha.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotMatcha.png')";
     selectedDrinkTopping = "none";
   }
   if (temperature === "cold") {
-    matchaBase.style.backgroundImage = "url('/assets/coldMatcha.png')";
-    drink2.style.backgroundImage = "url('/assets/coldMatcha.png')";
+    matchaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldMatcha.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldMatcha.png')";
     selectedDrinkTopping = "none";
   }
   selectedDrink = "matcha";
@@ -641,13 +641,13 @@ matcha2.addEventListener("click", function () {
 
 tea1.addEventListener("click", function () {
   if (temperature === "hot") {
-    teaBase.style.backgroundImage = "url('/assets/hotTeaLemon.png')";
-    drink2.style.backgroundImage = "url('/assets/hotTeaLemon.png')";
+    teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotTeaLemon.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotTeaLemon.png')";
     selectedDrinkTopping = "lemon";
   }
   if (temperature === "cold") {
-    teaBase.style.backgroundImage = "url('/assets/coldTeaLemon.png')";
-    drink2.style.backgroundImage = "url('/assets/coldTeaLemon.png')";
+    teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldTeaLemon.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldTeaLemon.png')";
     selectedDrinkTopping = "lemon";
   }
   selectedDrink = "tea";
@@ -657,13 +657,13 @@ tea1.addEventListener("click", function () {
 
 tea2.addEventListener("click", function () {
   if (temperature === "hot") {
-    teaBase.style.backgroundImage = "url('/assets/hotTea.png')";
-    drink2.style.backgroundImage = "url('/assets/hotTea.png')";
+    teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotTea.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/hotTea.png')";
     selectedDrinkTopping = "none";
   }
   if (temperature === "cold") {
-    teaBase.style.backgroundImage = "url('/assets/coldTea.png')";
-    drink2.style.backgroundImage = "url('/assets/coldTea.png')";
+    teaBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldTea.png')";
+    drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/coldTea.png')";
     selectedDrinkTopping = "none";
   }
   selectedDrink = "tea";
@@ -822,7 +822,7 @@ function reset() {
   topSign2.style.animation = "signDown 1s ease-in-out forwards";
 
   //maindish screen
-  mainDish.style.backgroundImage = "url('/assets/emptyImage.png')";
+  mainDish.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyImage.png')";
   nextButton2.style.right = "-100%";
   nextButton2.style.animation = "none";
 
@@ -834,7 +834,7 @@ function reset() {
   pancakeCustomizationScreen.style.animation = "none";
   sliderCircle.style.animationPlayState = "unset";
   pancakeGameText.innerHTML = "Click the pan to stop at the right time!";
-  pancakeBase.style.backgroundImage = "url('/assets/pancakePlain.png')";
+  pancakeBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/pancakePlain.png')";
 
   //toast game reset
 
@@ -844,7 +844,7 @@ function reset() {
   toastCustomizationScreen.style.animation = "none";
   timerLine.style.animationPlayState = "unset";
   toastGameText.innerHTML = "Stop the timer at the perfect time!";
-  toastBase.style.backgroundImage = "url('/assets/toastPlain.png')";
+  toastBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/toastPlain.png')";
 
   //egg game reset
 
@@ -857,13 +857,13 @@ function reset() {
   visible(egg3);
   eggsScore = 0;
   eggsGameText.innerHTML = eggsScore;
-  eggsBase.style.backgroundImage = "url('/assets/eggsSunnySideUp.png')";
+  eggsBase.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png')";
 
   topSign3.style.animation = "signDown 1s ease-in-out forwards";
 
   //drinks
-  drink2.style.backgroundImage = "url('/assets/emptyImage.png')";
-  drink3.style.backgroundImage = "url('/assets/emptyImage.png')";
+  drink2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyImage.png')";
+  drink3.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyImage.png')";
 
 
   coffeeButton.style.top = "400px";
@@ -886,7 +886,7 @@ function reset() {
   food2.style.animation = "plateIn 1s ease-in-out forwards";
   food3.style.animation = "plateIn 1s ease-in-out forwards";
 
-  mainDish2.style.backgroundImage = "url('/assets/emptyImage.png')";
+  mainDish2.style.backgroundImage = "url('https://kwong09.github.io/sunny-side-cafe/assets/emptyImage.png')";
   topSign4.style.animation = "signDown 1s ease-in-out forwards";
   nextButton3.style.right = "-100%";
   nextButton3.style.animation = "none";

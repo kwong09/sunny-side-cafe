@@ -58,7 +58,7 @@ div {
 }
 
 .homeScreen {
-  background-image: url('/assets/homeScreenBackground.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/homeScreenBackground.png');
 }
 
 #startButton {
@@ -73,7 +73,7 @@ div {
 
   cursor: pointer;
 
-  background-image: url('/assets/startButton.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/startButton.png');
   animation: startButtonFloat 1s infinite ease-in-out;
 }
 
@@ -113,15 +113,15 @@ div {
 }
 
 .customerOption1 {
-  background-image: url('/assets/customer1.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/customer1.png');
   left: 20%;
 }
 .customerOption2 {
-  background-image: url('/assets/customer2.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/customer2.png');
   left: 50%;
 }
 .customerOption3 {
-  background-image: url('/assets/customer3.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/customer3.png');
   left: 80%;
 }
 
@@ -151,7 +151,7 @@ div {
 
 
 .orderScreen {
-  background-image: url("/assets/orderBackground.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/orderBackground.png");
   display: none;
 }
 
@@ -165,7 +165,7 @@ div {
 }
 
 .orderCounter {
-  background-image: url("/assets/orderCounter.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/orderCounter.png");
 }
 
 .customer, .customer2 {
@@ -175,7 +175,7 @@ div {
   position: fixed;
   top: 500px;
   left: 150px;
-  background-image: url("/assets/customer1.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/customer1.png");
 
   animation: customerUp 1s ease-in-out forwards;
 }
@@ -237,7 +237,7 @@ div {
 .nextButton1 {
   height: 100px;
   width: 150px;
-  background-image: url("/assets/nextButton.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/nextButton.png");
   position: fixed;
   right: -100%;
   top: 450px;
@@ -344,7 +344,7 @@ div {
 }
 
 .mainDishScreen {
-  background-image: url('/assets/mainDishBackground.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/mainDishBackground.png');
   display: none;
 }
 
@@ -356,7 +356,7 @@ div {
 
   position: absolute;
   left: 15px;
-  background-image: url("/assets/blankImage.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/blankImage.png");
 }
 
 .drink,
@@ -367,7 +367,7 @@ div {
 
   position: absolute;
   left: 170px;
-  background-image: url("/assets/blankImage.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/blankImage.png");
 }
 
 .food,
@@ -375,7 +375,7 @@ div {
 .food3 {
   height: 180px;
   width: 250px;
-  background-image: url('/assets/plate.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/plate.png');
 
   position: fixed;
   left: -125px;
@@ -417,17 +417,17 @@ div {
 }
 
 .pancakeButton {
-  background-image: url("/assets/pancakePlain.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/pancakePlain.png");
   left: 150px;
 }
 
 .toastButton {
-  background-image: url("/assets/toastPlain.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/toastPlain.png");
   left: 375px;
 }
 
 .eggsButton {
-  background-image: url("/assets/eggsSunnySideUp.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png");
   left: 600px;
 }
 
@@ -476,7 +476,7 @@ div {
 .closeButton {
   height: 50px;
   width: 50px;
-  background-image: url('/assets/closeButton.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/closeButton.png');
 
   position: absolute;
   cursor: pointer;
@@ -526,51 +526,51 @@ div {
 }
 
 .pancakePlain {
-  background-image: url("/assets/blankImage.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/blankImage.png");
 }
 
 .pancakeFruits {
-  background-image: url("/assets/fruits.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/fruits.png");
 }
 
 .pancakeButter {
-  background-image: url("/assets/butter.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/butter.png");
 }
 
 .pancakeWhippedCream {
-  background-image: url("/assets/whippedCream.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/whippedCream.png");
 }
 
 .toastPlain {
-  background-image: url("/assets/blankImage.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/blankImage.png");
 }
 
 .toastAvocadoEgg {
-  background-image: url("/assets/avocado.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/avocado.png");
 }
 
 .toastPBJ {
-  background-image: url("/assets/pbj.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/pbj.png");
 }
 
 .toastChocolate {
-  background-image: url("/assets/chocolate.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/chocolate.png");
 }
 
 .eggsSunnySideUp {
-  background-image: url("/assets/eggsSunnySideUp.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png");
 }
 
 .eggsOmelette {
-  background-image: url("/assets/eggsOmelette.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsOmelette.png");
 }
 
 .eggsScrambled {
-  background-image: url("/assets/eggsScrambled.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsScrambled.png");
 }
 
 .eggsHardBoiled {
-  background-image: url("/assets/eggsHardBoiled.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsHardBoiled.png");
 }
 
 #pancakePan {
@@ -581,7 +581,7 @@ div {
   left: 200px;
   bottom: 80px;
 
-  background-image: url('/assets/sizzlingPan.gif');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/sizzlingPan.gif');
 
   cursor: pointer;
 }
@@ -638,7 +638,7 @@ div {
   display: none;
   height: 60px;
   width: 100px;
-  background-image: url('/assets/nextButton2.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/nextButton2.png');
 
   position: absolute;
 
@@ -660,15 +660,15 @@ div {
 }
 
 .pancakeBase {
-  background-image: url("/assets/pancakePlain.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/pancakePlain.png");
 }
 
 .toastBase {
-  background-image: url("/assets/toastPlain.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/toastPlain.png");
 }
 
 .eggsBase {
-  background-image: url("/assets/eggsSunnySideUp.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png");
 }
 
 .customizationOptions {
@@ -701,7 +701,7 @@ div {
 .toaster {
   height: 200px;
   width: 200px;
-  background-image: url('/assets/toaster.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/toaster.png');
 
   position: absolute;
   top: 100px;
@@ -788,15 +788,15 @@ div {
 }
 
 .egg1 {
-  background-image: url('/assets/eggsHardBoiled.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/eggsHardBoiled.png');
 }
 
 .egg2 {
-  background-image: url('/assets/eggsSunnySideUp.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/eggsSunnySideUp.png');
 }
 
 .egg3 {
-  background-image: url('/assets/none.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/none.png');
 }
 
 .eggsGameTextDiv {
@@ -826,7 +826,7 @@ div {
 .nextButton2, .nextButton3, .nextButton4 {
   height: 100px;
   width: 150px;
-  background-image: url("/assets/nextButton.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/nextButton.png");
   position: fixed;
   right: -100%;
   top: 450px;
@@ -839,7 +839,7 @@ div {
 }
 
 .drinksScreen {
-  background-image: url('/assets/drinksBackground.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/drinksBackground.png');
   display: none;
 }
 
@@ -858,31 +858,31 @@ div {
 .icedButton {
   top: 70px;
   left: 100px;
-  background-image: url("/assets/emptyCup.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/emptyCup.png");
 }
 
 .hotButton {
   top: 250px;
   left: 100px;
-  background-image: url("/assets/emptyMug.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/emptyMug.png");
 }
 
 .coffeeButton {
   left: 300px;
   top: 400px;
-  background-image: url("/assets/hotCoffee.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/hotCoffee.png");
 }
 
 .matchaButton {
   left: 480px;
   top: 400px;
-  background-image: url("/assets/hotMatcha.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/hotMatcha.png");
 }
 
 .teaButton {
   left: 660px;
   top: 400px;
-  background-image: url("/assets/hotTea.png");
+  background-image: url("https://kwong09.github.io/sunny-side-cafe/assets/hotTea.png");
 }
 
 @keyframes drinksUp {
@@ -947,12 +947,12 @@ div {
 
 
 .pickupScreen {
-  background-image: url('/assets/orderBackground.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/orderBackground.png');
   display: none;
 }
 
 
 .pancakePlain, .toastPlain, .coffee2, .matcha2, .tea2 {
-  background-image: url('/assets/none.png');
+  background-image: url('https://kwong09.github.io/sunny-side-cafe/assets/none.png');
 }
 
