@@ -13,6 +13,7 @@ let customerSpeechBubble = document.querySelector(".customerSpeechBubble");
 let mainDishScreen = document.querySelector(".mainDishScreen");
 let food = document.querySelector(".food");
 let mainDish = document.querySelector(".mainDish");
+let drink2 = document.querySelector(".drink2");
 let plate = document.querySelector(".plate");
 let pancakeButton = document.querySelector(".pancakeButton");
 let toastButton = document.querySelector(".toastButton");
@@ -351,6 +352,8 @@ eggsNextGameButton.addEventListener("click", function () {
     "customizationScreenEnter 1s ease-in-out forwards";
 });
 
+let mainDish2 = document.querySelector(".mainDish2");
+
 nextButton2.addEventListener("click", function () {
   nextButton2.style.animation =
     "nextButtonRightDisappear 2s ease-in-out forwards";
@@ -362,6 +365,7 @@ nextButton2.addEventListener("click", function () {
   topSign2.style.animation = "signUp 1s ease-in-out forwards";
 
   food.style.animation = "plateOut 1s ease-in-out forwards";
+  mainDish2.style.backgroundImage = "url('/assets/" + selectedDish + ".png')";
 
   setTimeout(function () {
     mainDishScreen.classList.add("fadeOut");
@@ -407,4 +411,181 @@ eggsScrambled.addEventListener("click", function () {
   selectedDish = "eggsScrambled";
   mainDish.style.backgroundImage = "url('/assets/eggsScrambled.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
+});
+
+let icedButton = document.querySelector(".icedButton");
+let hotButton = document.querySelector(".hotButton");
+let coffeeButton = document.querySelector(".coffeeButton");
+let matchaButton = document.querySelector(".matchaButton");
+let teaButton = document.querySelector(".teaButton");
+let coffeeText = document.querySelector(".coffeeText");
+let matchaText = document.querySelector(".matchaText");
+let teaText = document.querySelector(".teaText");
+
+let coffee1 = document.querySelector(".coffee1");
+let coffee2 = document.querySelector(".coffee2");
+let matcha1 = document.querySelector(".matcha1");
+let matcha2 = document.querySelector(".matcha2");
+let tea1 = document.querySelector(".tea1");
+let tea2 = document.querySelector(".tea2");
+let temperature = "none";
+
+let coffeeBase = document.querySelector(".coffeeBase");
+let matchaBase = document.querySelector(".matchaBase");
+let teaBase = document.querySelector(".teaBase");
+
+icedButton.addEventListener("click", function () {
+  coffeeButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  matchaButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  teaButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  coffeeText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  matchaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  teaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  coffeeButton.style.backgroundImage = "url('/assets/coldCoffee.png')";
+  matchaButton.style.backgroundImage = "url('/assets/coldMatcha.png')";
+  teaButton.style.backgroundImage = "url('/assets/coldTea.png')";
+
+  coffee1.style.backgroundImage = "url('/assets/milk.png')";
+  coffee2.style.backgroundImage = "url('/assets/blankImage.png')";
+  matcha1.style.backgroundImage = "url('/assets/milk.png')";
+  matcha2.style.backgroundImage = "url('/assets/blankImage.png')";
+  tea1.style.backgroundImage = "url('/assets/lemon.png')";
+  tea2.style.backgroundImage = "url('/assets/blankImage.png')";
+
+  coffeeBase.style.backgroundImage = "url('/assets/emptyCup.png')";
+  matchaBase.style.backgroundImage = "url('/assets/emptyCup.png')";
+  teaBase.style.backgroundImage = "url('/assets/emptyCup.png')";
+
+  temperature = "cold";
+});
+hotButton.addEventListener("click", function () {
+  coffeeButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  matchaButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  teaButton.style.animation = "drinksUp 1s ease-in-out forwards";
+  coffeeText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  matchaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  teaText.style.animation = "drinksTextUp 1s ease-in-out forwards";
+  coffeeButton.style.backgroundImage = "url('/assets/hotCoffee.png')";
+  matchaButton.style.backgroundImage = "url('/assets/hotMatcha.png')";
+  teaButton.style.backgroundImage = "url('/assets/hotTea.png')";
+
+  coffee1.style.backgroundImage = "url('/assets/whippedCream.png')";
+  coffee2.style.backgroundImage = "url('/assets/blankImage.png')";
+  matcha1.style.backgroundImage = "url('/assets/strawberry.png')";
+  matcha2.style.backgroundImage = "url('/assets/blankImage.png')";
+  tea1.style.backgroundImage = "url('/assets/lemon.png')";
+  tea2.style.backgroundImage = "url('/assets/blankImage.png')";
+
+  coffeeBase.style.backgroundImage = "url('/assets/emptyMug.png')";
+  matchaBase.style.backgroundImage = "url('/assets/emptyMug.png')";
+  teaBase.style.backgroundImage = "url('/assets/emptyMug.png')";
+
+  temperature = "hot";
+});
+
+let coffeeCustomizationWindow = document.querySelector(
+  ".coffeeCustomizationWindow"
+);
+let coffeeClose = document.querySelector(".coffeeClose");
+let matchaCustomizationWindow = document.querySelector(
+  ".matchaCustomizationWindow"
+);
+let matchaClose = document.querySelector(".matchaClose");
+let teaCustomizationWindow = document.querySelector(".teaCustomizationWindow");
+let teaClose = document.querySelector(".teaClose");
+
+coffeeButton.addEventListener("click", function () {
+  coffeeCustomizationWindow.style.animation =
+    "minigameUp 1s ease-in-out forwards";
+});
+
+coffeeClose.addEventListener("click", function () {
+  coffeeCustomizationWindow.style.animation =
+    "minigameDown 1s ease-in-out forwards";
+});
+
+matchaButton.addEventListener("click", function () {
+  matchaCustomizationWindow.style.animation =
+    "minigameUp 1s ease-in-out forwards";
+});
+
+matchaClose.addEventListener("click", function () {
+  matchaCustomizationWindow.style.animation =
+    "minigameDown 1s ease-in-out forwards";
+});
+
+teaButton.addEventListener("click", function () {
+  teaCustomizationWindow.style.animation = "minigameUp 1s ease-in-out forwards";
+});
+
+teaClose.addEventListener("click", function () {
+  teaCustomizationWindow.style.animation =
+    "minigameDown 1s ease-in-out forwards";
+});
+
+coffee1.addEventListener("click", function () {
+  if (temperature === "hot") {
+    coffeeBase.style.backgroundImage =
+      "url('/assets/hotCoffeeWhippedCream.png')";
+    drink2.style.backgroundImage = "url('/assets/hotCoffeeWhippedCream.png')";
+  }
+  if (temperature === "cold") {
+    coffeeBase.style.backgroundImage = "url('/assets/coldCoffeeMilk.png')";
+    drink2.style.backgroundImage = "url('/assets/coldCoffeeMilk.png')";
+  }
+});
+
+coffee2.addEventListener("click", function () {
+  if (temperature === "hot") {
+    coffeeBase.style.backgroundImage = "url('/assets/hotCoffee.png')";
+    drink2.style.backgroundImage = "url('/assets/hotCoffee.png')";
+  }
+  if (temperature === "cold") {
+    coffeeBase.style.backgroundImage = "url('/assets/coldCoffee.png')";
+    drink2.style.backgroundImage = "url('/assets/coldCoffee.png')";
+  }
+});
+
+matcha1.addEventListener("click", function () {
+  if (temperature === "hot") {
+    matchaBase.style.backgroundImage = "url('/assets/hotMatchaStrawberry.png')";
+    drink2.style.backgroundImage = "url('/assets/hotMatchaStrawberry.png')";
+  }
+  if (temperature === "cold") {
+    matchaBase.style.backgroundImage = "url('/assets/coldMatchaMilk.png')";
+    drink2.style.backgroundImage = "url('/assets/coldMatchaMilk.png')";
+  }
+});
+
+matcha2.addEventListener("click", function () {
+  if (temperature === "hot") {
+    matchaBase.style.backgroundImage = "url('/assets/hotMatcha.png')";
+    drink2.style.backgroundImage = "url('/assets/hotMatcha.png')";
+  }
+  if (temperature === "cold") {
+    matchaBase.style.backgroundImage = "url('/assets/coldMatcha.png')";
+    drink2.style.backgroundImage = "url('/assets/coldMatcha.png')";
+  }
+});
+
+tea1.addEventListener("click", function () {
+  if (temperature === "hot") {
+    teaBase.style.backgroundImage = "url('/assets/hotTeaLemon.png')";
+    drink2.style.backgroundImage = "url('/assets/hotTeaLemon.png')";
+  }
+  if (temperature === "cold") {
+    teaBase.style.backgroundImage = "url('/assets/coldTeaLemon.png')";
+    drink2.style.backgroundImage = "url('/assets/coldTeaLemon.png')";
+  }
+});
+
+tea2.addEventListener("click", function () {
+  if (temperature === "hot") {
+    teaBase.style.backgroundImage = "url('/assets/hotTea.png')";
+    drink2.style.backgroundImage = "url('/assets/hotTea.png')";
+  }
+  if (temperature === "cold") {
+    teaBase.style.backgroundImage = "url('/assets/coldTea.png')";
+    drink2.style.backgroundImage = "url('/assets/coldTea.png')";
+  }
 });
