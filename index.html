@@ -17,12 +17,16 @@
     <div class="background"></div>
 
     <div class="screen homeScreen">
-      <div
-        id="startButton"
-        onclick="invisible(homeScreen); visible(orderScreen)"
-      >
-        Start
-      </div>
+      <div id="startButton" onclick="invisible(homeScreen); visible(customerScreen)"></div>
+    </div>
+    
+    <div class="screen customerScreen">
+      <div class="customerScreenTitle">CHOOSE A CUSTOMER TO SERVE!</div>
+      <div class="customerScreenDescription">Please note: When you take an order, you have to remember<br> what the customer asked for! You are also allowed to serve the same<br> customer over and over, but it makes the game boring...</div>
+      <div class="customerBackground"></div>
+      <div class="customerOption1"></div>
+      <div class="customerOption2"></div>
+      <div class="customerOption3"></div>
     </div>
 
     <div class="screen orderScreen">
@@ -30,11 +34,11 @@
 
       <div class="customer"></div>
       <div class="customerSpeechBubble">
-        <span
-          >Good morning! Could I please get a <br />simple pancake with butter
+        <span id="customerRequest">
+          Good morning! Could I please get a <br />simple pancake with butter
           on top? <br />Along with a nice, hot cup of coffee<br />
-          (with no toppings). Thank you!</span
-        >
+          (with no toppings). Thank you!
+        </span>
       </div>
       <div class="counter orderCounter"></div>
       <div class="money">$<span id="moneyCount">100</span></div>
@@ -185,9 +189,27 @@
         <div class="drink2"></div>
         <div class="plate2"></div>
       </div>
+
+      <div class="nextButton3"></div>
     </div>
 
     <div class="screen pickupScreen">
+      <div class="topSign1">PICKUP HERE</div>
+
+      <div class="customer2"></div>
+      <div class="customerSpeechBubble">
+        <span>
+          Your Rating: <span id="finalScore">0 out of 5 stars </span> <br/>
+          <span id="customerResponse">Thank you for making my breakfast! </span> </br>
+          Your Profit: <span id="moneyEarned">$0.00</span>
+        </span>
+      </div>
+      <div class="counter"></div>
+      <div class="food3">
+        <div class="mainDish3"></div>
+        <div class="drink3"></div>
+        <div class="plate3"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>

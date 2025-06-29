@@ -58,7 +58,7 @@ div {
 }
 
 .homeScreen {
-  background-color: lightblue;
+  background-image: url('/assets/homeScreenBackground.png');
 }
 
 #startButton {
@@ -67,14 +67,88 @@ div {
   text-align: center;
 
   position: fixed;
-  top: 50%;
+  top: 87%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   cursor: pointer;
 
-  background-color: white;
+  background-image: url('/assets/startButton.png');
+  animation: startButtonFloat 1s infinite ease-in-out;
 }
+
+@keyframes startButtonFloat {
+  0%{top: 87%;}
+  50%{top: 85%;}
+  100%{top: 87%;}
+}
+
+.customerScreen {
+  background-color: rgb(148, 79, 33);
+  display: none;
+}
+
+
+.customerOption1, .customerOption2, .customerOption3 {
+  height: 250px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.customerBackground {
+  height: 300px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(198, 150, 111);
+  border-radius: 10px;
+}
+
+.customerOption1 {
+  background-image: url('/assets/customer1.png');
+  left: 20%;
+}
+.customerOption2 {
+  background-image: url('/assets/customer2.png');
+  left: 50%;
+}
+.customerOption3 {
+  background-image: url('/assets/customer3.png');
+  left: 80%;
+}
+
+.customerScreenTitle, .customerScreenDescription {
+  background-color: antiquewhite;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+}
+
+.customerScreenTitle {
+  top: 15%;
+  font-size: 30px;
+}
+
+.customerScreenDescription {
+  top: 87%;
+  width: 700px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+
 
 .orderScreen {
   background-image: url("/assets/orderBackground.png");
@@ -94,7 +168,7 @@ div {
   background-image: url("/assets/orderCounter.png");
 }
 
-.customer {
+.customer, .customer2 {
   height: 250px;
   width: 200px;
 
@@ -270,12 +344,13 @@ div {
 }
 
 .mainDishScreen {
-  background-color: lightyellow;
+  background-image: url('/assets/mainDishBackground.png');
   display: none;
 }
 
 .mainDish,
-.mainDish2 {
+.mainDish2,
+.mainDish3 {
   height: 150px;
   width: 150px;
 
@@ -285,20 +360,22 @@ div {
 }
 
 .drink,
-.drink2 {
+.drink2,
+.drink3 {
   height: 100px;
   width: 100px;
 
   position: absolute;
-  left: 165px;
+  left: 170px;
   background-image: url("/assets/blankImage.png");
 }
 
 .food,
-.food2 {
+.food2,
+.food3 {
   height: 180px;
   width: 250px;
-  background-color: green;
+  background-image: url('/assets/plate.png');
 
   position: fixed;
   left: -125px;
@@ -367,7 +444,7 @@ div {
 .customizationWindow {
   height: 500px;
   width: 800px;
-  background-color: lightgray;
+  background-color: rgb(148, 79, 33);
   overflow: hidden;
 
   position: fixed;
@@ -399,7 +476,7 @@ div {
 .closeButton {
   height: 50px;
   width: 50px;
-  background-color: red;
+  background-image: url('/assets/closeButton.png');
 
   position: absolute;
   cursor: pointer;
@@ -504,7 +581,7 @@ div {
   left: 200px;
   bottom: 80px;
 
-  background-color: blue;
+  background-image: url('/assets/sizzlingPan.gif');
 
   cursor: pointer;
 }
@@ -525,7 +602,7 @@ div {
   height: 50px;
   width: 50px;
 
-  background-color: pink;
+  background-color: rgb(148, 79, 33);
   position: absolute;
   top: 25px;
   left: 110px;
@@ -561,7 +638,7 @@ div {
   display: none;
   height: 60px;
   width: 100px;
-  background-color: pink;
+  background-image: url('/assets/nextButton2.png');
 
   position: absolute;
 
@@ -607,7 +684,7 @@ div {
 
   position: absolute;
   right: 0px;
-  background-color: lightcoral;
+  background-color: rgb(198, 150, 111);
 }
 
 .customizationOptions div {
@@ -624,7 +701,7 @@ div {
 .toaster {
   height: 200px;
   width: 200px;
-  background-color: blue;
+  background-image: url('/assets/toaster.png');
 
   position: absolute;
   top: 100px;
@@ -699,7 +776,7 @@ div {
   left: 125px;
   top: 50px;
 
-  background-color: pink;
+  background-color: rgb(198, 150, 111);
 }
 
 .poppingItem {
@@ -708,8 +785,18 @@ div {
   position: absolute;
   top: 220px;
   cursor: pointer;
+}
 
-  background-color: green;
+.egg1 {
+  background-image: url('/assets/eggsHardBoiled.png');
+}
+
+.egg2 {
+  background-image: url('/assets/eggsSunnySideUp.png');
+}
+
+.egg3 {
+  background-image: url('/assets/none.png');
 }
 
 .eggsGameTextDiv {
@@ -736,7 +823,7 @@ div {
   top: 170px;
 }
 
-.nextButton2 {
+.nextButton2, .nextButton3 {
   height: 100px;
   width: 150px;
   background-image: url("/assets/nextButton.png");
@@ -747,7 +834,7 @@ div {
 }
 
 .drinksScreen {
-  background-color: lightsteelblue;
+  background-image: url('/assets/drinksBackground.png');
   display: none;
 }
 
@@ -852,3 +939,15 @@ div {
   left: 700px;
   top: 400px;
 }
+
+
+.pickupScreen {
+  background-image: url('/assets/orderBackground.png');
+  display: none;
+}
+
+
+.pancakePlain, .toastPlain, .coffee2, .matcha2, .tea2 {
+  background-image: url('/assets/none.png');
+}
+
