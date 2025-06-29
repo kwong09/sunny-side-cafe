@@ -200,7 +200,8 @@ div {
 
 .topSign1,
 .topSign2,
-.topSign3 {
+.topSign3,
+.topSign4 {
   height: auto;
   width: max-content;
   font-size: 30px;
@@ -277,8 +278,7 @@ div {
 
   background-color: antiquewhite;
 
-  animation: expandRight 1s ease-in-out forwards,
-    floating 2s ease-in-out infinite;
+  animation: expandRight 1s ease-in-out forwards, floating 2s ease-in-out infinite;
 }
 
 @keyframes floating {
@@ -823,7 +823,7 @@ div {
   top: 170px;
 }
 
-.nextButton2, .nextButton3 {
+.nextButton2, .nextButton3, .nextButton4 {
   height: 100px;
   width: 150px;
   background-image: url("/assets/nextButton.png");
@@ -831,6 +831,11 @@ div {
   right: -100%;
   top: 450px;
   cursor: pointer;
+}
+
+.nextButton4 {
+  animation-delay: 1s;
+  animation: nextButtonRightAppear 1s ease-in-out forwards;
 }
 
 .drinksScreen {

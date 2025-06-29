@@ -8,6 +8,7 @@ let customer2 = document.querySelector(".customer2");
 let counter = document.querySelector(".counter");
 let money = document.querySelector(".money");
 let moneyCount = document.getElementById("moneyCount");
+let dollars = 0;
 let nextButton1 = document.querySelector(".nextButton1");
 let customerSpeechBubble = document.querySelector(".customerSpeechBubble");
 
@@ -21,6 +22,7 @@ let toastButton = document.querySelector(".toastButton");
 let eggsButton = document.querySelector(".eggsButton");
 
 let minigame = document.querySelector(".minigame");
+let customizationWindow = document.querySelector(".customizationWindow");
 let pancakeGame = document.querySelector(".pancakeGame");
 let closeButton = document.querySelector(".closeButton");
 let pancakeClose = document.querySelector(".pancakeClose");
@@ -77,6 +79,7 @@ let toastGameText = document.getElementById("toastGameText");
 
 let nextButton2 = document.querySelector(".nextButton2");
 let nextButton3 = document.querySelector(".nextButton3");
+let nextButton4 = document.querySelector(".nextButton4");
 
 let drinksScreen = document.querySelector(".drinksScreen");
 let topSign2 = document.querySelector(".topSign2");
@@ -103,6 +106,7 @@ function invisible(obj) {
 }
 
 customerOption1.addEventListener("click", function() {
+  reset();
   round = 1;
   customer.style.backgroundImage = "url('/assets/customer1.png')";
   customer2.style.backgroundImage = "url('/assets/customer1.png')";
@@ -112,6 +116,7 @@ customerOption1.addEventListener("click", function() {
 });
 
 customerOption2.addEventListener("click", function() {
+  reset();
   round = 2;
   customer.style.backgroundImage = "url('/assets/customer2.png')";
   customer2.style.backgroundImage = "url('/assets/customer2.png')";
@@ -121,6 +126,7 @@ customerOption2.addEventListener("click", function() {
 });
 
 customerOption3.addEventListener("click", function() {
+  reset();
   round = 3;
   customer.style.backgroundImage = "url('/assets/customer3.png')";
   customer2.style.backgroundImage = "url('/assets/customer3.png')";
@@ -198,7 +204,7 @@ pancakePan.addEventListener("click", function () {
         score = score + 0.5;
       }
     } else {
-      pancakeGameText.innerHTML = "That was bad... Try to improve!";
+      pancakeGameText.innerHTML = "That was bad... Better luck next time!";
     }
   });
 });
@@ -309,6 +315,8 @@ toastPlain.addEventListener("click", function () {
   mainDish.style.backgroundImage = "url('/assets/toastPlain.png')";
   nextButton2.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
 });
+
+//potatopotatopotato
 
 let egg1 = document.querySelector(".egg1");
 let egg2 = document.querySelector(".egg2");
@@ -669,6 +677,8 @@ let mainDish3 = document.querySelector(".mainDish3");
 let drink3 = document.querySelector(".drink3");
 let topSign3 = document.querySelector(".topSign3");
 let pickupScreen = document.querySelector(".pickupScreen");
+let customerResponse = document.getElementById("customerResponse");
+let moneyEarned = document.getElementById("moneyEarned");
 
 nextButton3.addEventListener("click", function () {
   nextButton3.style.animation = "nextButtonRightDisappear 2s ease-in-out forwards";
@@ -702,7 +712,7 @@ nextButton3.addEventListener("click", function () {
     if (selectedDish === "toastAvocadoEgg") {
       score ++;
     }
-    if (selectedDrinkTopping === "strawberry") {
+    if (selectedDrinkTopping === "milk") {
       score++;
     }
   }
@@ -720,6 +730,23 @@ nextButton3.addEventListener("click", function () {
     if (selectedDrinkTopping === "lemon") {
       score++;
     }
+  }
+
+  if (score >= 4) {
+    customerResponse.innerHTML = "Thank you for making my breakfast!";
+    moneyEarned.innerHTML = "$5.25";
+    dollars = dollars + 5.25;
+  }
+
+  if (score<4 && score>=2) {
+    customerResponse.innerHTML = "The meal wasn't perfect, but it<br> was still yummy!";
+    moneyEarned.innerHTML = "$3.00";
+    dollars = dollars + 3;
+  }
+
+  if (score<2) {
+    customerResponse.innerHTML = "Um... I didn't order this...";
+    moneyEarned.innerHTML = "$0.00";
   }
 
   let finalScore = document.getElementById("finalScore");
@@ -740,3 +767,137 @@ nextButton3.addEventListener("click", function () {
     pickupScreen.classList.remove("fadeIn");
   }, 3000);
 });
+
+let topSign4 = document.querySelector(".topSign4");
+
+nextButton4.addEventListener("click", function() {
+  nextButton4.style.animation = "nextButtonRightDisappear 2s ease-in-out forwards";
+  food3.style.animation = "plateOut 1s ease-in-out forwards";
+  topSign4.style.animation = "signUp 1s ease-in-out forwards";
+
+  setTimeout(function () {
+    pickupScreen.classList.add("fadeOut");
+  }, 1000);
+
+  setTimeout(function () {
+    invisible(pickupScreen);
+    pickupScreen.classList.remove("fadeOut");
+    visible(customerScreen);
+    customerScreen.classList.add("fadeIn");
+  }, 2000);
+
+  setTimeout(function () {
+    customerScreen.classList.remove("fadeIn");
+  }, 3000);
+
+});
+
+function reset() {
+
+  //order screen
+  topSign1.style.animation = "signDown 1s ease-in-out forwards";
+  customer.style.animation = "customerUp 1s ease-in-out forwards";
+  nextButton1.style.animation = "nextButtonRightAppear 1s ease-in-out forwards"
+  customerSpeechBubble.style.animation = "expandRight 1s ease-in-out forwards, floating 2s ease-in-out infinite";
+
+  pancakeGame.style.animation = "none";
+  pancakeGame.style.top = "600px";
+  toastGame.style.animation = "none";
+  toastGame.style.top = "600px";
+  eggsGame.style.animation = "none";
+  eggsGame.style.top = "600px";
+
+  coffeeCustomizationWindow.style.animation = "none";
+  coffeeCustomizationWindow.style.top = "600px";
+  teaCustomizationWindow.style.animation = "none";
+  teaCustomizationWindow.style.top = "600px";
+  matchaCustomizationWindow.style.animation = "none";
+  matchaCustomizationWindow.style.top = "600px";
+  
+  pancakeButton.style.animation =
+    "selectionButtonsUp 1s ease-in-out forwards";
+  toastButton.style.animation = "selectionButtonsUp 1s ease-in-out forwards";
+  eggsButton.style.animation = "selectionButtonsUp 1s ease-in-out forwards";
+  plate.style.animation = "plateIn 1s ease-in-out forwards";
+  topSign2.style.animation = "signDown 1s ease-in-out forwards";
+
+  //maindish screen
+  mainDish.style.backgroundImage = "url('/assets/emptyImage.png')";
+  nextButton2.style.right = "-100%";
+  nextButton2.style.animation = "none";
+
+  //pancake game reset
+
+  pancakeGameScreen.style.left = "25px";
+  pancakeGameScreen.style.animation = "none";
+  pancakeCustomizationScreen.style.left = "800px";
+  pancakeCustomizationScreen.style.animation = "none";
+  sliderCircle.style.animationPlayState = "unset";
+  pancakeGameText.innerHTML = "Click the pan to stop at the right time!";
+  pancakeBase.style.backgroundImage = "url('/assets/pancakePlain.png')";
+
+  //toast game reset
+
+  toastGameScreen.style.left = "25px";
+  toastGameScreen.style.animation = "none";
+  toastCustomizationScreen.style.left = "800px";
+  toastCustomizationScreen.style.animation = "none";
+  timerLine.style.animationPlayState = "unset";
+  toastGameText.innerHTML = "Stop the timer at the perfect time!";
+  toastBase.style.backgroundImage = "url('/assets/toastPlain.png')";
+
+  //egg game reset
+
+  eggsGameScreen.style.left = "25px";
+  eggsGameScreen.style.animation = "none";
+  eggsCustomizationScreen.style.left = "800px";
+  eggsCustomizationScreen.style.animation = "none";
+  visible(egg1);
+  visible(egg2);
+  visible(egg3);
+  eggsScore = 0;
+  eggsGameText.innerHTML = eggsScore;
+  eggsBase.style.backgroundImage = "url('/assets/eggsSunnySideUp.png')";
+
+  topSign3.style.animation = "signDown 1s ease-in-out forwards";
+
+  //drinks
+  drink2.style.backgroundImage = "url('/assets/emptyImage.png')";
+  drink3.style.backgroundImage = "url('/assets/emptyImage.png')";
+
+
+  coffeeButton.style.top = "400px";
+  matchaButton.style.top = "400px";
+  teaButton.style.top = "400px";
+  coffeeText.style.top = "400px";
+  matchaText.style.top = "400px";
+  teaText.style.top = "400px";
+
+  coffeeButton.style.animation = "none";
+  matchaButton.style.animation = "none";
+  teaButton.style.animation = "none";
+  coffeeText.style.animation = "none";
+  matchaText.style.animation = "none";
+  teaText.style.animation = "none";
+
+
+
+  food.style.animation = "plateIn 1s ease-in-out forwards";
+  food2.style.animation = "plateIn 1s ease-in-out forwards";
+  food3.style.animation = "plateIn 1s ease-in-out forwards";
+
+  mainDish2.style.backgroundImage = "url('/assets/emptyImage.png')";
+  topSign4.style.animation = "signDown 1s ease-in-out forwards";
+  nextButton3.style.right = "-100%";
+  nextButton3.style.animation = "none";
+
+  nextButton4.style.animation = "nextButtonRightAppear 2s ease-in-out forwards";
+
+  score = 0;
+  selectedDish = "";
+  temperature = "";
+  selectedDrink = "";
+  selectedDrinkTopping = "";
+  let formattedDollars = dollars.toFixed(2);
+  moneyCount.innerHTML = "$" + formattedDollars;
+}
